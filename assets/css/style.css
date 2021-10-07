@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Lora', serif;
 }
 
 .markup {
@@ -16,4 +19,6 @@
 
 .logo {
     margin: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
