@@ -1,24 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;700&display=swap');
 
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --red: #FF0000;
+    --darkred: #B30000;
+    --green: #00B333;
+    --orange: #FF530D;
+    --pink: #E80C7A;
+    --blue: #0971B3;
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Lora', serif;
 }
 
+body {
+    background: #3B3C39;
+}
+
 .markup {
-    background: #fe9d9d;
-    border: 1px solid #f94646;
+    background: #fff;
     height: 120px;
 }
 
 .markup-container {
-    background: #5bf946;
-    border: 1px solid #36ae26;
+    background: #36454F;
+    border: 1px solid #36454F;
 }
 
 .logo {
     margin: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    color: var(--white);
+}
+
+form {
+    border-bottom: 1px solid var(--blue);
+}
+
+.container>div.box {
+    border-radius: 5px;
+    margin-left: -15px;
+    margin-right: -5px;
+    border-left: none;
+}
+
+.box {
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 10px 0 0;
+}
+
+.box:nth-child(1) {
+    border-left: 15px solid var(--blue);
+}
+.box:nth-child(2) {
+    border-left: 15px solid var(--orange);
+}
+.box:nth-child(3) {
+    border-left: 15px solid var(--black);
+}
+.box:nth-child(4) {
+    border-left: 15px solid var(--red);
+}
+.box:nth-child(5) {
+    border-left: 15px solid var(--green);
 }
