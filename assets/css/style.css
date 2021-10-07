@@ -31,6 +31,10 @@ body {
     border: 1px solid #36454F;
 }
 
+.logo img {
+    width: 120px;
+}
+
 .logo {
     margin: 15px;
     font-family: 'Poppins', sans-serif;
