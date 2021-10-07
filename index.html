@@ -8,6 +8,9 @@
     <meta name="description" content="Covid-19 disease situation dashboard with latest data worldwide.">
     <meta name="keywords" content="covid-19, coronavirus, disease, pandemic, outbreak, virus">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Covid-19 Dashboard</title>
@@ -15,11 +18,52 @@
 
 <body>
 
+    <div>
+        <header>
+            <nav>
+                <h1 class="logo">Covid-19</h1>
+            </nav>
+        </header>
+    </div>
+
     <div class="container">
 
-        <header>
-            <h1 class="logo">Covid-19</h1>
-        </header>
+        <div class="row">
+            <div class="col-12">
+                <h3>COVID-19 Dashboard</h3>
+                <form action="">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="all">All</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="australia">Australia</option>
+                        <option value="belgium">Belgium</option>
+                        <option value="brazil">Brazil</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <h4>Total of cases</h4>
+            </div>
+            <div class="col-3">
+                <h4>Daily Deaths</h4>
+            </div>
+            <div class="col-3">
+                <h4>Daily Cases</h4>
+            </div>
+            <div class="col-3">
+                <h4>Total of deaths</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <h4>Total of recovered</h4>
+            </div>
+        </div>
 
     </div>
 
