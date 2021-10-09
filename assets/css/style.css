@@ -8,6 +8,7 @@
     --orange: #FF530D;
     --pink: #E80C7A;
     --blue: #0971B3;
+    --gray: #3B3C39;
 }
 
 * {
@@ -17,11 +18,11 @@
 }
 
 body {
-    background: #3B3C39;
+    background: var(--gray);
 }
 
 .markup {
-    background: #fff;
+    background: var(--white);
     height: 160px;
 }
 
