@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;700&display=swap');
-
 :root {
     --black: #000000;
     --white: #FFFFFF;
@@ -36,7 +35,7 @@ body {
 }
 
 .logo {
-    margin: 15px;
+    margin-top: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: var(--white);
@@ -54,23 +53,31 @@ form {
 }
 
 .box {
-    padding: 5px;
+    padding: 15px;
     border-radius: 5px;
-    margin: 10px 10px 0 0;
+    margin: 10px 15px;
 }
 
 .box:nth-child(1) {
-    border-left: 15px solid var(--blue);
+    border-left: 20px solid var(--blue);
 }
+
 .box:nth-child(2) {
-    border-left: 15px solid var(--orange);
+    border-left: 20px solid var(--orange);
 }
+
 .box:nth-child(3) {
-    border-left: 15px solid var(--black);
+    border-left: 20px solid var(--black);
 }
+
 .box:nth-child(4) {
-    border-left: 15px solid var(--red);
+    border-left: 20px solid var(--red);
 }
+
 .box:nth-child(5) {
-    border-left: 15px solid var(--green);
+    border-left: 20px solid var(--green);
+}
+
+.box:nth-child(6) {
+    border-left: 20px solid var(--purple);
 }
