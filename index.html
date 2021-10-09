@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="description" content="Covid-19 disease situation dashboard with latest data worldwide.">
     <meta name="keywords" content="covid-19, coronavirus, disease, pandemic, outbreak, virus">
+    <meta name="author" content="Emidio Valereto Neto">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -21,13 +22,35 @@
 
 <body>
 
-    <div class="container-fluid markup-container">
-        <header>
-            <nav>
-                <h1 class="logo"><img src="./assets/img/coronavirus-logo.png" alt="Logo">Covid-19</h1>
-            </nav>
-        </header>
-    </div>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="" class="navbar-brand">
+                    <h1 class="logo"><img src="./assets/img/coronavirus-logo.png" alt="Logo">Covid-19</h1>
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="https://api.covid19api.com/summary" target="_blank"
+                                title="covid19 api documentation" class="nav-link">API</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-auto d-none d-sm-block">
+                    <a href="" class="btn btn-outline-light">
+                        <i class="fas fa-lightbulb"></i>
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
 
     <main>
         <div class="container">
@@ -71,7 +94,7 @@
                 <div class="col-lg-5 markup box">
                     <h4>Daily Recovered:</h4>
                 </div>
-                
+
                 <div class="col-lg-5 markup box">
                     <h4>Total of Recovered:</h4>
                 </div>
@@ -81,6 +104,7 @@
         </div>
     </main>
 
+    <script src="https://kit.fontawesome.com/2564f6ed16.js" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 
 </body>
