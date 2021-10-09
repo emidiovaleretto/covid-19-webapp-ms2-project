@@ -45,6 +45,11 @@ form {
     border-bottom: 1px solid var(--blue);
 }
 
+.flag {
+    width: 160px;
+    margin-top: -15px;
+}
+
 .container>div.box {
     border-radius: 5px;
     margin-left: 0;
