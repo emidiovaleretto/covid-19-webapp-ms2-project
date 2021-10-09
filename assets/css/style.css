@@ -27,7 +27,7 @@ body {
 }
 
 .navbar-transparent {
-	background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .logo img {
@@ -41,13 +41,10 @@ body {
     color: var(--white);
 }
 
-form {
-    border-bottom: 1px solid var(--blue);
-}
-
 .flag {
-    width: 120px;
+    width: 130px;
     margin-top: -15px;
+    margin-left: 60%;
 }
 
 .container>div.box {
@@ -61,7 +58,7 @@ form {
     padding: 15px;
     border-radius: 5px;
     margin: 10px 15px;
-    box-shadow: 10px 10px 5px ;
+    box-shadow: 10px 10px 5px;
 }
 
 .box:nth-child(1) {
