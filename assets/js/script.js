@@ -1,10 +1,12 @@
 function changeBackgroundColor(event) {
+
+    /* The function changes the background color of the HTML elements. */
+
     let body = document.body;
     let box = document.getElementsByClassName("box");
-    let icon = document.getElementsByClassName('btn-light')[0];
-    icon.classList.replace('btn-light', 'btn-warning');
 
-    if (body.id === 'darkgray') {
+    if (this.classList.contains('btn-light')) {
+        this.classList.replace('btn-light', 'btn-warning');
         body.style.backgroundColor = '#FFFFFF';
 
         for (let i = 0; i < box.length; i++) {
@@ -14,9 +16,16 @@ function changeBackgroundColor(event) {
         }
     }
     else {
+        this.classList.replace('btn-warning', 'btn-light');
         body.style.backgroundColor = '#181818';
+
+        for (let i = 0; i < box.length; i++) {
+            box[i].style.backgroundColor = '#3B3C39';
+            box[i].style.color = '#FFFFFF';
+            box[i].style.boxShadow = '8px 8px 20px #000000';
+        }
     }
 }
 
-let clickableIcon = document.getElementById('clickable-icon');
-clickableIcon.addEventListener('click', changeBackgroundColor);
+let icon = document.getElementById('clickable-icon');
+icon.addEventListener('click', changeBackgroundColor);
