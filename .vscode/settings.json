@@ -28,5 +28,8 @@
    },
    "[css]": {
       "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+   },
+   "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
    }
 }
