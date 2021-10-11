@@ -1,12 +1,12 @@
 function changeBackgroundColor(event) {
 
-    /* The function changes the background color of the HTML elements. */
+    /* This function changes the background color of the HTML elements. */
 
     let body = document.body;
     let box = document.getElementsByClassName("box");
 
-    if (this.classList.contains('btn-light')) {
-        this.classList.replace('btn-light', 'btn-warning');
+    if (this.classList.contains('btn-outline-dark')) {
+        this.classList.replace('btn-outline-dark', 'btn-outline-warning');
         body.style.backgroundColor = '#FFFFFF';
 
         for (let i = 0; i < box.length; i++) {
@@ -16,7 +16,7 @@ function changeBackgroundColor(event) {
         }
     }
     else {
-        this.classList.replace('btn-warning', 'btn-light');
+        this.classList.replace('btn-outline-warning', 'btn-outline-dark');
         body.style.backgroundColor = '#181818';
 
         for (let i = 0; i < box.length; i++) {
