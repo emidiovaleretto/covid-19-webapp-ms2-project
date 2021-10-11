@@ -36,13 +36,13 @@ let country = [];
 
 
 window.addEventListener("load", function () {
-    api();
+    coronavirusApi();
 
 });
 
 
 const url = 'https://api.covid19api.com/summary';
-async function api() {
+async function coronavirusApi() {
 
     const response = await fetch(url);
     const data = await response.json();
@@ -51,6 +51,7 @@ async function api() {
     country = countries;
     global = globalData;
     addTextContent();
+    addFlagImage();
 }
 
 function addTextContent() {
@@ -62,7 +63,7 @@ function addTextContent() {
     totalDeaths.innerHTML = global.TotalDeaths;
     newRecovered.innerHTML = global.NewRecovered;
     totalRecovered.innerHTML = global.TotalRecovered;
-   
+
 }
 
 let lastUpdate = document.getElementById('last-updated');
@@ -72,3 +73,11 @@ let dailyDeaths = document.getElementById("daily-deaths");
 let totalDeaths = document.getElementById("total-deaths");
 let newRecovered = document.getElementById('daily-recovered');
 let totalRecovered = document.getElementById('total-recovered');
+
+
+// function addFlagImage() {
+//     const url = `https://icons.iconarchive.com/icons/wikipedia/flags/1024/${country[23].CountryCode}-${country[23].Country}-Flag-icon.png`
+//     countryFlag.setAttribute('src', url);
+// }
+
+// let countryFlag = document.getElementById('flag');
