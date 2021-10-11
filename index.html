@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="description" content="Covid-19 disease situation dashboard with latest data worldwide.">
     <meta name="keywords" content="covid-19, coronavirus, disease, pandemic, outbreak, virus">
-    <meta name="author" content="Emidio Valereto Neto">
+    <meta name="author" content="Emidio Valereto">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -65,7 +65,7 @@
             <div class="row markup align-items-center box mt-3">
                 <div class="col-md-6">
                     <h3>COVID-19 Dashboard</h3>
-                    <span>Last updated on: 2021-10-09T14:39</span>
+                    <p>Last updated on: <span id="last-updated">0</span></p>
 
                     <form class="mt-2" action="#">
                         <label for="country">Country:</label>
@@ -80,7 +80,7 @@
                 </div>
 
                 <div class="col-md-6 d-none d-md-block">
-                    <img class="flag" src="./assets/img/brazil-flag-icon.png" alt="Brazilian flag icon">
+                    <img class="flag" src="./assets/img/global.png" alt="Global Image">
                 </div>
 
             </div>
@@ -89,32 +89,32 @@
 
                 <div class="col-lg-5 markup box">
                     <h4>New Confirmed:</h4>
-                    <p class="display-4 text-center">296.415</p>
+                    <p class="display-4 text-center" id="new-confirmed">0</p>
                 </div>
 
                 <div class="col-lg-5 markup box">
                     <h4>Total Confirmed:</h4>
-                    <p class="display-4 text-center">236.900.483</p>
+                    <p class="display-4 text-center" id="total-confirmed">0</p>
                 </div>
 
                 <div class="col-lg-5 markup box">
                     <h4>Daily Deaths:</h4>
-                    <p class="display-4 text-center">5.643</p>
+                    <p class="display-4 text-center" id="daily-deaths">0</p>
                 </div>
 
                 <div class="col-lg-5 markup box">
                     <h4>Total of Deaths:</h4>
-                    <p class="display-4 text-center">4.839.730</p>
+                    <p class="display-4 text-center" id="total-deaths">0</p>
                 </div>
 
                 <div class="col-lg-5 markup box">
                     <h4>Daily Recovered:</h4>
-                    <p class="display-4 text-center">0</p>
+                    <p class="display-4 text-center" id="daily-recovered">0</p>
                 </div>
 
                 <div class="col-lg-5 markup box">
                     <h4>Total of Recovered:</h4>
-                    <p class="display-4 text-center">0</p>
+                    <p class="display-4 text-center" id="total-recovered">0</p>
                 </div>
 
             </div>
