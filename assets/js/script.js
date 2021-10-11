@@ -49,9 +49,9 @@ async function coronavirusApi() {
     const globalData = data.Global;
     const countries = data.Countries;
     country = countries;
+    console.log(country);
     global = globalData;
     addTextContent();
-    addFlagImage();
 }
 
 function addTextContent() {
@@ -63,6 +63,7 @@ function addTextContent() {
     totalDeaths.innerHTML = global.TotalDeaths;
     newRecovered.innerHTML = global.NewRecovered;
     totalRecovered.innerHTML = global.TotalRecovered;
+    addFlagImage();
 
 }
 
@@ -76,7 +77,7 @@ let totalRecovered = document.getElementById('total-recovered');
 
 
 // function addFlagImage() {
-//     const url = `https://icons.iconarchive.com/icons/wikipedia/flags/1024/${country[23].CountryCode}-${country[23].Country}-Flag-icon.png`
+//     const url = `https://icons.iconarchive.com/icons/wikipedia/flags/1024/${country[80].CountryCode}-${country[80].Country}-Flag-icon.png`
 //     countryFlag.setAttribute('src', url);
 // }
 
