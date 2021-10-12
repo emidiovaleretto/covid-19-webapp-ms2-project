@@ -1,3 +1,5 @@
+let log = console.log;
+
 function changeBackgroundColor(event) {
 
     /* This function changes the background color of the HTML elements. */
@@ -52,17 +54,17 @@ async function coronavirusDataApi() {
     const data = await response.json();
     const globalData = data.Global;
     const countries = data.Countries;
+
     country = countries;
     global = globalData;
-    loadCountryList();
-    addTextContent();
-    // loadCountryFlag();
 
+    loadCountryList();
+    addGlobalData();
 }
 
-function addTextContent() {
+function addGlobalData() {
 
-    /* This function add the text content to the HTML document. */
+    /* This function add the global data to the HTML document. */
 
     lastUpdate.innerHTML = global.Date;
     newConfirmed.innerHTML = global.NewConfirmed;
@@ -81,6 +83,8 @@ let dailyDeaths = document.getElementById("daily-deaths");
 let totalDeaths = document.getElementById("total-deaths");
 let newRecovered = document.getElementById('daily-recovered');
 let totalRecovered = document.getElementById('total-recovered');
+let countryFlag = document.getElementById('flag');
+
 
 function loadCountryList() {
 
@@ -94,18 +98,38 @@ function loadCountryList() {
     }
 }
 
-// let selectedCountry = document.getElementById('selected-country');
-// let countryFlag = document.getElementById('flag');
-
-// function loadCountryFlag() {
-//     const url = `https://icons.iconarchive.com/icons/wikipedia/flags/1024/${country.CountryCode}-${country.Slug}-Flag-icon.png`
-//     countryFlag.setAttribute('src', url);
-// }
-
 function getSelectedCountry(select) {
 
     /* This function gets the country seleted from <select> input. */
 
     let selectedCountry = select.options[select.selectedIndex].text;
-    console.log(selectedCountry);
+
+    for (let i = 0; i < country.length; i++) {
+
+        if (selectedCountry === country[i].Country) {
+            
+            lastUpdate.innerHTML = country[i].Date;
+            newConfirmed.innerHTML = country[i].NewConfirmed;
+            totalConfirmed.innerHTML = country[i].TotalConfirmed;
+            dailyDeaths.innerHTML = country[i].NewDeaths;
+            totalDeaths.innerHTML = country[i].TotalDeaths;
+            newRecovered.innerHTML = country[i].NewRecovered;
+            totalRecovered.innerHTML = country[i].TotalRecovered;
+
+            const url = `https://icons.iconarchive.com/icons/wikipedia/flags/1024/${country[i].CountryCode}-${country[i].Country}-Flag-icon.png`
+            countryFlag.setAttribute('src', url);
+            countryFlag.setAttribute('alt', `${country[i].Country} Flag`);
+            log(countryFlag);
+
+        } else if (selectedCountry === 'All') {
+            addGlobalData();
+
+            let path = "./assets/img/global.png";
+            countryFlag.setAttribute('src', path);
+
+            log(countryFlag);
+
+        }
+    }
+
 }
