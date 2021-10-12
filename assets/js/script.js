@@ -36,7 +36,7 @@ icon.addEventListener('click', changeBackgroundColor);
 let global = [];
 let country = [];
 
-
+// This event listener is fired upon the browser window is loaded.
 window.addEventListener("load", function () {
     coronavirusDataApi();
 
@@ -45,6 +45,8 @@ window.addEventListener("load", function () {
 
 const url = 'https://api.covid19api.com/summary';
 async function coronavirusDataApi() {
+
+    /* This function loads the data from the API. */
 
     const response = await fetch(url);
     const data = await response.json();
@@ -59,6 +61,8 @@ async function coronavirusDataApi() {
 }
 
 function addTextContent() {
+
+    /* This function add the text content to the HTML document. */
 
     lastUpdate.innerHTML = global.Date;
     newConfirmed.innerHTML = global.NewConfirmed;
@@ -79,6 +83,8 @@ let newRecovered = document.getElementById('daily-recovered');
 let totalRecovered = document.getElementById('total-recovered');
 
 function loadCountryList() {
+
+    /* This function loads the country list and append it to the <option> HTML tag. */
 
     for (let i = 0; i < country.length; i++) {
         $('select').append($('<option>', {
