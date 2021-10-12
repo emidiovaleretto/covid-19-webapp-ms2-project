@@ -101,3 +101,11 @@ function loadCountryList() {
 //     const url = `https://icons.iconarchive.com/icons/wikipedia/flags/1024/${country.CountryCode}-${country.Slug}-Flag-icon.png`
 //     countryFlag.setAttribute('src', url);
 // }
+
+function getSelectedCountry(select) {
+
+    /* This function gets the country seleted from <select> input. */
+
+    let selectedCountry = select.options[select.selectedIndex].text;
+    console.log(selectedCountry);
+}
