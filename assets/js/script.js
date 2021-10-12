@@ -30,28 +30,32 @@ function changeBackgroundColor(event) {
 let icon = document.getElementById('clickable-icon');
 icon.addEventListener('click', changeBackgroundColor);
 
-//create empty array
+// Build the API
+
+
 let global = [];
 let country = [];
 
 
 window.addEventListener("load", function () {
-    coronavirusApi();
+    coronavirusDataApi();
 
 });
 
 
 const url = 'https://api.covid19api.com/summary';
-async function coronavirusApi() {
+async function coronavirusDataApi() {
 
     const response = await fetch(url);
     const data = await response.json();
     const globalData = data.Global;
     const countries = data.Countries;
     country = countries;
-    console.log(country);
     global = globalData;
+    loadCountryList();
     addTextContent();
+    // loadCountryFlag();
+
 }
 
 function addTextContent() {
@@ -63,7 +67,6 @@ function addTextContent() {
     totalDeaths.innerHTML = global.TotalDeaths;
     newRecovered.innerHTML = global.NewRecovered;
     totalRecovered.innerHTML = global.TotalRecovered;
-    addFlagImage();
 
 }
 
@@ -75,10 +78,20 @@ let totalDeaths = document.getElementById("total-deaths");
 let newRecovered = document.getElementById('daily-recovered');
 let totalRecovered = document.getElementById('total-recovered');
 
+function loadCountryList() {
 
-// function addFlagImage() {
-//     const url = `https://icons.iconarchive.com/icons/wikipedia/flags/1024/${country[80].CountryCode}-${country[80].Country}-Flag-icon.png`
+    for (let i = 0; i < country.length; i++) {
+        $('select').append($('<option>', {
+            value: country[i].Slug,
+            text: country[i].Country
+        }));
+    }
+}
+
+// let selectedCountry = document.getElementById('selected-country');
+// let countryFlag = document.getElementById('flag');
+
+// function loadCountryFlag() {
+//     const url = `https://icons.iconarchive.com/icons/wikipedia/flags/1024/${country.CountryCode}-${country.Slug}-Flag-icon.png`
 //     countryFlag.setAttribute('src', url);
 // }
-
-// let countryFlag = document.getElementById('flag');
