@@ -9,12 +9,12 @@ function themeMode(backgroundColor, backgroundColorBoxes, fontColor, boxShadow) 
        it is called by the changeBackgroundColor() function and 
        passed the corresponding values. */
 
-    body.style.backgroundColor = backgroundColor; //'#FFFFFF'
+    body.style.backgroundColor = backgroundColor;
 
         for (let i = 0; i < box.length; i++) {
-            box[i].style.backgroundColor = backgroundColorBoxes; //'#e9e9e9'
-            box[i].style.color = fontColor; //'#000000'
-            box[i].style.boxShadow = boxShadow; //'8px 8px 10px #3B3C39'
+            box[i].style.backgroundColor = backgroundColorBoxes;
+            box[i].style.color = fontColor;
+            box[i].style.boxShadow = boxShadow;
         }
 }
 
