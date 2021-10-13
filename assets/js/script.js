@@ -98,6 +98,24 @@ function loadCountryList() {
     }
 }
 
+
+function toCapitalize(str) {
+
+    /* This function receives a string and capitalize 
+        the first letter of each word in a string. */
+
+    str = str.split('-');
+
+    for (let i = 0; i < str.length; i++) {
+        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    }
+
+    newString = str.join('-');
+
+    return newString;
+}
+
+
 function getSelectedCountry(select) {
 
     /* This function gets the country seleted from <select> input. */
@@ -107,7 +125,7 @@ function getSelectedCountry(select) {
     for (let i = 0; i < country.length; i++) {
 
         if (selectedCountry === country[i].Country) {
-            
+
             lastUpdate.innerHTML = country[i].Date;
             newConfirmed.innerHTML = country[i].NewConfirmed;
             totalConfirmed.innerHTML = country[i].TotalConfirmed;
@@ -116,7 +134,9 @@ function getSelectedCountry(select) {
             newRecovered.innerHTML = country[i].NewRecovered;
             totalRecovered.innerHTML = country[i].TotalRecovered;
 
-            const url = `https://icons.iconarchive.com/icons/wikipedia/flags/1024/${country[i].CountryCode}-${country[i].Country}-Flag-icon.png`
+            let countrySlug = toCapitalize(country[i].Slug);
+
+            const url = `https://icons.iconarchive.com/icons/wikipedia/flags/1024/${country[i].CountryCode}-${countrySlug}-Flag-icon.png`
             countryFlag.setAttribute('src', url);
             countryFlag.setAttribute('alt', `${country[i].Country} Flag`);
             log(countryFlag);
