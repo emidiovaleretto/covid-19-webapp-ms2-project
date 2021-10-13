@@ -65,7 +65,6 @@ async function coronavirusDataApi() {
     global = globalData;
 
     loadCountryList();
-    addData();
 }
 
 function addData(data) {
