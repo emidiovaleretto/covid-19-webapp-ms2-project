@@ -72,12 +72,12 @@ function addData(data) {
     /* This function add data to the HTML document. */
 
     lastUpdate.innerHTML = data.Date;
-    newConfirmed.innerHTML = data.NewConfirmed;
-    totalConfirmed.innerHTML = data.TotalConfirmed;
-    dailyDeaths.innerHTML = data.NewDeaths;
-    totalDeaths.innerHTML = data.TotalDeaths;
-    newRecovered.innerHTML = data.NewRecovered;
-    totalRecovered.innerHTML = data.TotalRecovered;
+    newConfirmed.innerHTML = decimalPoint(data.NewConfirmed);
+    totalConfirmed.innerHTML = decimalPoint(data.TotalConfirmed);
+    dailyDeaths.innerHTML = decimalPoint(data.NewDeaths);
+    totalDeaths.innerHTML = decimalPoint(data.TotalDeaths);
+    newRecovered.innerHTML = decimalPoint(data.NewRecovered);
+    totalRecovered.innerHTML = decimalPoint(data.TotalRecovered);
 
 }
 
@@ -123,6 +123,15 @@ function toCapitalize(str) {
     newString = str.join('-');
 
     return newString;
+}
+
+
+function decimalPoint(number) {
+
+    /* This function adds a decimal point after every
+       three digits in the number given as argument. */
+
+    return number.toLocaleString('pt-Br');
 }
 
 
