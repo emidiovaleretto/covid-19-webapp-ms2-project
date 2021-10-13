@@ -144,15 +144,12 @@ function getSelectedCountry(select) {
             const url = `https://icons.iconarchive.com/icons/wikipedia/flags/1024/${country[i].CountryCode}-${countrySlug}-Flag-icon.png`
             countryFlag.setAttribute('src', url);
             countryFlag.setAttribute('alt', `${country[i].Country} Flag`);
-            log(countryFlag);
 
         } else if (selectedCountry === 'All') {
             addGlobalData();
 
             let path = "./assets/img/global.png";
             countryFlag.setAttribute('src', path);
-
-            log(countryFlag);
 
         }
     }
