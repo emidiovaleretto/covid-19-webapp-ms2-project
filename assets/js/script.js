@@ -102,7 +102,12 @@ function loadCountryList() {
 function toCapitalize(str) {
 
     /* This function receives a string and capitalize 
-        the first letter of each word in a string. */
+        the first letter of each word in a string. 
+        
+       This function was created to format the
+        string to fit the url that loads the flag image.
+        
+        */
 
     str = str.split('-');
 
