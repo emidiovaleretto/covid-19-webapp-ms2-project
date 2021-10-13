@@ -1,31 +1,37 @@
 let log = console.log;
+let body = document.body;
+let box = document.getElementsByClassName("box");
+
+function themeMode(backgroundColor, backgroundColorBoxes, fontColor, boxShadow) {
+
+    /* This function receives as parameters: backgroundColor, 
+       backgroundColorBoxes, fontColor and boxShadow. Afterwards, 
+       it is called by the changeBackgroundColor() function and 
+       passed the corresponding values. */
+
+    body.style.backgroundColor = backgroundColor; //'#FFFFFF'
+
+        for (let i = 0; i < box.length; i++) {
+            box[i].style.backgroundColor = backgroundColorBoxes; //'#e9e9e9'
+            box[i].style.color = fontColor; //'#000000'
+            box[i].style.boxShadow = boxShadow; //'8px 8px 10px #3B3C39'
+        }
+}
 
 function changeBackgroundColor(event) {
 
     /* This function changes the background color of the HTML elements. */
 
-    let body = document.body;
-    let box = document.getElementsByClassName("box");
-
     if (this.classList.contains('btn-outline-dark')) {
-        this.classList.replace('btn-outline-dark', 'btn-outline-warning');
-        body.style.backgroundColor = '#FFFFFF';
 
-        for (let i = 0; i < box.length; i++) {
-            box[i].style.backgroundColor = '#e9e9e9';
-            box[i].style.color = '#000000';
-            box[i].style.boxShadow = '8px 8px 10px #3B3C39';
-        }
+        this.classList.replace('btn-outline-dark', 'btn-outline-warning');
+        themeMode('#FFFFFF', '#e9e9e9', '#000000', '8px 8px 10px #3B3C39')
+        
     }
     else {
-        this.classList.replace('btn-outline-warning', 'btn-outline-dark');
-        body.style.backgroundColor = '#181818';
 
-        for (let i = 0; i < box.length; i++) {
-            box[i].style.backgroundColor = '#3B3C39';
-            box[i].style.color = '#FFFFFF';
-            box[i].style.boxShadow = '8px 8px 20px #000000';
-        }
+        this.classList.replace('btn-outline-warning', 'btn-outline-dark');
+        themeMode('#181818', '#3B3C39', '#FFFFFF', '8px 8px 20px #000000')
     }
 }
 
@@ -34,9 +40,9 @@ icon.addEventListener('click', changeBackgroundColor);
 
 // Build the API
 
-
 let global = [];
 let country = [];
+
 
 // This event listener is fired upon the browser window is loaded.
 window.addEventListener("load", function () {
@@ -59,20 +65,20 @@ async function coronavirusDataApi() {
     global = globalData;
 
     loadCountryList();
-    addGlobalData();
+    addData();
 }
 
-function addGlobalData() {
+function addData(data) {
 
-    /* This function add the global data to the HTML document. */
+    /* This function add data to the HTML document. */
 
-    lastUpdate.innerHTML = global.Date;
-    newConfirmed.innerHTML = global.NewConfirmed;
-    totalConfirmed.innerHTML = global.TotalConfirmed;
-    dailyDeaths.innerHTML = global.NewDeaths;
-    totalDeaths.innerHTML = global.TotalDeaths;
-    newRecovered.innerHTML = global.NewRecovered;
-    totalRecovered.innerHTML = global.TotalRecovered;
+    lastUpdate.innerHTML = data.Date;
+    newConfirmed.innerHTML = data.NewConfirmed;
+    totalConfirmed.innerHTML = data.TotalConfirmed;
+    dailyDeaths.innerHTML = data.NewDeaths;
+    totalDeaths.innerHTML = data.TotalDeaths;
+    newRecovered.innerHTML = data.NewRecovered;
+    totalRecovered.innerHTML = data.TotalRecovered;
 
 }
 
@@ -131,13 +137,7 @@ function getSelectedCountry(select) {
 
         if (selectedCountry === country[i].Country) {
 
-            lastUpdate.innerHTML = country[i].Date;
-            newConfirmed.innerHTML = country[i].NewConfirmed;
-            totalConfirmed.innerHTML = country[i].TotalConfirmed;
-            dailyDeaths.innerHTML = country[i].NewDeaths;
-            totalDeaths.innerHTML = country[i].TotalDeaths;
-            newRecovered.innerHTML = country[i].NewRecovered;
-            totalRecovered.innerHTML = country[i].TotalRecovered;
+            addData(country[i]);
 
             let countrySlug = toCapitalize(country[i].Slug);
 
@@ -146,7 +146,7 @@ function getSelectedCountry(select) {
             countryFlag.setAttribute('alt', `${country[i].Country} Flag`);
 
         } else if (selectedCountry === 'All') {
-            addGlobalData();
+            addData(global);
 
             let path = "./assets/img/global.png";
             countryFlag.setAttribute('src', path);
