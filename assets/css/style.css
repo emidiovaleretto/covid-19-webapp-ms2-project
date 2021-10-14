@@ -25,9 +25,9 @@ body {
     color: var(--white);
 }
 
-.markup {
+.box-container {
     background: var(--gray);
-    height: 160px;
+    height: 100%;
 }
 
 .navbar-transparent {

@@ -1,6 +1,6 @@
 let log = console.log;
 let body = document.body;
-let box = document.getElementsByClassName("box");
+let box = document.getElementsByClassName("box-container");
 
 function themeMode(backgroundColor, backgroundColorBoxes, fontColor, boxShadow) {
 
