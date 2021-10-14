@@ -1,1 +1,343 @@
-# Coronavirus (COVID-19) - Dashboard 
+# **Coronavirus COVID-19 - Dashboard** 
+
+![Mockup](./assets/img/mockup.png)
+
+The live link can be found <a href="https://emidiovaleretto.github.io/covid-19-dashboard-ms2-project/" target="_blank" rel="noopener">here</a>.
+
+
+## Table of Contents
+  - [Introduction](#introduction)
+  - [UX](#ux)
+    - [Overview](#overview)
+    - [Why a COVID-19 application?](#why-a-covid-19-application)
+    - [Key Project Goals](#key-project-goals)
+    - [Design](#design)
+      - [Design Process](#design-process)
+  - [User Stories](#user-stories)
+    - [Target Audience](#target-audience)
+    - [As a Site User I want to...](#as-a-site-user-i-want-to)
+    - [As a Developer I want to...](#as-a-developer-i-want-to)
+      - [Features Visiable across the page](#features-visiable-across-the-page)
+    - [Bugs and Fixes Implemented after Testing](#bugs-and-fixes-implemented-after-testing)
+    - [Features left to Implement](#features-left-to-implement)
+  - [Technologies Used](#technologies-used)
+    - [Libraries, Frameworks and other softwares used](#libraries-frameworks-and-other-softwares-used)
+    - [API's](#apis)
+    - [Tools](#tools)
+  - [Testing](#testing)
+    - [Validation of Code Testing](#validation-of-code-testing)
+      - [HTML](#html)
+      - [CSS](#css)
+      - [Javascript](#javascript)
+  - [Deployment](#deployment)
+    - [Forking the GitHub Repository and Running this Project Locally](#forking-the-github-repository-and-running-this-project-locally)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+    - [Acknowledgements](#acknowledgements)
+
+## Introduction
+
+This project was created as part of the Full Stack Software Development course offered by Code Institute.
+
+The goal of this site is to give users the latest data about the COVID-19 disease outbreak with a only one single click. The users can find out the cases of the COVID-19 disease searching by an expecific country or can get the latest data wordwide. Hopefully this site will give everyone the source to keep themselves as up-to-date as possible regarding the pandemic of the new coronavirus.
+
+
+-----
+
+## UX
+
+### **Overview**
+
+COVID-19 application is an online dashboard where users can choose a specific country and get the latest COVID-19 disease information such as the total number of confirmed cases, the total number of deaths, the daily new cases and so on. Likewise, the user can choose "Worldwide" to get the latest COVID-19 disease data for all countries.
+
+
+### **Why a COVID-19 application?**
+
+The idea behind the COVID-19 dashboard project arose from the need for people to be as up-to-date as possible about the outbreak of the new coronavirus. As an Internet user, I always try to know the latest information about COVID-19 disease in my country and around the world. Thinking about that, I decided to develop this application and also because it is the most recent topic at the moment.
+
+### **Key Project Goals**
+
+As a site owner, I would like to provide users with the latest data about COVID-19 disease outbreak as real as possible so that users of the site feel safe and know that the data is trustworthy.
+
+
+-----
+
+### Design
+
+#### Design Process
+
+1. _Strategy Plane_
+   
+   **User Stories**
+   This site is created based on the following user’s expectations in mind.
+
+   * As a first time user I would like to:
+     
+	 * Have a clear information on what the site is about and what it provides
+	 * Have an easy navigation that is consistent throughout the website
+	 * Consistent layout without any confusing elements
+	 * Accessibility considerations are taken throughout the site
+	 * Have clear feedback for my action taken within the site 
+
+	* As a site creator we would like :
+
+	  * To provide safe and friendly site that anyone can gain and share information in order to tackle their everyday challenge at their workplace
+	  * To provide safe and friendly site that any people can gain and share information in order to tackle their everyday challenge at their workplace	  
+
+2. _Scope Plane_
+
+	**Features**
+	
+	 * The site should be responsive and user-friendly on all browsers and devices.
+	 * Intuitive and user-friendly site that any people can gain and share experiences.
+	 * intuitive and user-friendly layout.
+	 * The purpose of the site should be clear immediately.
+
+3. _Structure Plane_
+
+	**User Story:**
+
+	> - As a first time visitor to the site I would like to immediately understand it's purpose.
+
+	**Acceptance Criteria:**
+
+	* The home page has a heading that discribes the purpose of the site and who it is for.
+
+	**Implementation:**
+
+	The home page will display a heading that clearly shows the site purpose.
+
+	**Result:** User Story accomplished.
+
+	**User Stories:**
+
+	> - I would like to have access to the latest data regarding the outbreak of the new coronavirus.
+	> - Upon the chosen the preferred country, I would like to see the results of my request as quickly as possible.
+	> - I would like the application to be friendly and easy to understand and use.
+
+	**Acceptance Criteria:**
+
+	* User can access an up-to-date data regarding the outbreak of the new coronavirus.
+	* User can easily access the list of the countries available and choose accordingly their desires and needs.
+	* User can see a container for each task, such as the total number of cases or the daily deaths, which improve their experience throughout the site. 
+
+	**Implementation:**
+
+	There is a select field in the top right corner of the page where the user can find the list of available countries and make a choice as they desires. Afterwards, users will receive an up-to-date details regarging the country chosen. Likewise, the users have the option to choose "Worldwide" to see the data of all countries details.
+
+	**Result:** User Story accomplished.
+
+4. _Skeleton Plane_
+
+	**Navigation:** Select field
+
+	* Click on the select field and scroll down to see the list of all available countries.
+	* Gets the latest data about the COVID-19 disease outbreak with a only one single click.
+
+	**Navigation:** Lightbulb icon
+
+	* Users can choose which background color they wish to display: light or dark.
+	* This feature is available on all devices, including tablets and mobile phones.
+
+	**Features**
+
+	*   Responsive on all device sizes.
+	*   Interactive elements: background color changeable.
+
+5. _Surface Plane_
+
+**Colour Pallette**
+
+* The color palette used was thought randomly, just to differentiate the containers and give a unique highlight to each. Although it was thought that way, I tried to prioritize the contrast between the elements and its colours, so that the chosen color does not interfere in the information to be transmitted.
+
+![#ffffff](https://via.placeholder.com/25/ffffff/000000?text=+) `#FFFFFF --white` 
+![#ff0000](https://via.placeholder.com/25/ff0000/000000?text=+) `#FF0000 --red` 
+![#B30000](https://via.placeholder.com/25/B30000/000000?text=+) `#B30000 --darkred`
+![#00B333](https://via.placeholder.com/25/00B333/000000?text=+) `#00B333 --green` 
+![#FF530D](https://via.placeholder.com/25/FF530D/000000?text=+) `#FF530D --orange` 
+![#E80C7A](https://via.placeholder.com/25/E80C7A/000000?text=+) `#E80C7A --pink` 
+![#0971B3](https://via.placeholder.com/25/0971B3/000000?text=+) `#0971B3 --blue` 
+![#3B3C39](https://via.placeholder.com/25/3B3C39/000000?text=+) `#3B3C39 --gray` 
+![#181818](https://via.placeholder.com/25/181818/000000?text=+) `#181818 --darkgray`
+![#000000](https://via.placeholder.com/25/000000/000000?text=+) `#000000 --black`
+
+**Font**
+
+* Google Fonts was used to import the fonts Lora & Poppins into the style.css file. These fonts were used throughout the site.
+
+[Back to top ⇧](#table-of-contents)
+
+
+-----
+
+## User Stories
+
+### Target Audience
+
+1. My target audience is those people who want to be updated about the new coronavirus pandemic and who want to consult daily the progress of the COVID-19 outbreak around the world.
+
+### As a Site User I want to...
+
+1. Be able to have access to the latest data regarding the outbreak of the new coronavirus.
+2. Being able to navigate the entire page without difficulties.
+3. Be able to access the list of the countries available and choose accordingly my desires and needs.
+4. Be able to to see the results of my request as quickly as possible.
+
+### As a Developer I want to...
+
+1. As I develop, I want all the features to be working as expected.
+2. I want the user to have the best experience browsing the site. 
+3. I want to showcase my skills in UX/UI design, HTML, CSS, JS etc.
+
+[Back to top ⇧](#table-of-contents)
+
+
+-----
+
+### Features Visiable across the page
+
+* Navbar: a virus image followed by a COVID-19 text logo, a link to the API Json file and a lightbulb icon where the users can interact with the background, through Javascript, changing the its color to light or dark.
+
+### Bugs and Fixes Implemented after Testing
+
+* Bug: for some reason I cannot predict, the API is not computing the Daily Recovered and Total of Recovered.
+
+### Features left to Implement
+
+* Text-to-Speech API. This will help many users who may struggle with reading on an electronic devices or for visually impaired users. This feature will read out what the other user has posted.
+* Text Enlarger. This will enlarge text for users who may struggle with reading on electronic devices and are unable to use the text-to-speech feature. Users who having hearing problems and having poor vision can benefit from this feature as the text will become much larger.
+* More options to change background color. This option will allow users with dyslexia to pick a background colour that is more suitable for them. 
+
+
+[Back to top ⇧](#table-of-contents)
+
+
+-----
+
+## Technologies Used
+
+### Languages
+
+1. **HTML5, or Hyper Text Markup Language:** Used to construct the page within this app -   
+https://developer.mozilla.org/en-US/docs/Web/HTML
+
+2. **CSS3, or Cascading Style Sheets:** Used to style the various elements on the app's pages via coloring, fonts, spacing, etc. - 
+https://www.w3.org/Style/CSS/Overview.en.html
+
+3. **Javascript:** A programming language - https://www.javascript.com/
+
+4. **JQuery:** A programming language - https://jquery.com/
+
+
+-----
+
+### Libraries, Frameworks and other softwares used
+
+1. **[Font Awesome](https://fontawesome.com/)** : was used throughout all pages to add icons in order to create a better visual experience for UX purposes.
+
+### API's
+
+1. **COVID-19 [API](https://api.covid19api.com/summary)** : the request returns a summary of Covid-19 in each country.
+
+### Frameworks
+
+1. **[Bootstrap](https://getbootstrap.com/)** : for quickly design and customize responsive mobile-first sites.
+
+### Open Source Softwares
+
+1. **[Am I Responsive?](http://ami.responsivedesign.is/)** : was used in order to see responsive design throughout the process and to generate mockup imagery to be used.
+
+2. **[Responsive Design Tester](https://www.responsivedesignchecker.com/)** : was used to see the responsivity throughout an array of devices (screen sizes) and resolutions. 
+
+
+-----
+
+### Tools
+
+1. **Gitpod:** An online IDE also used for creating & saving code that runs in a browser, it does not have to be installed on your PC - 
+https://www.gitpod.io/
+
+2. **Git:** A version control system for tracking changes in source code during software development - https://git-scm.com/
+
+3. **Github:** A company that provides hosting for software development version control using Git. It is a subsidiary of Microsoft - https://github
+
+4. **Chrome DevTools:** A set of web developer tools built directly into the Google Chrome browser. I used these tools constantly thoughout the development cycle -
+   https://developers.google.com/web/tools/chrome-devtools
+
+5. **W3C Markup Validation Service:** Used to run all html and css code through a validation process looking for errors - https://validator.w3.org/
+   https://jigsaw.w3.org/css-validator/validator
+
+6. **JSHint:** Javascript Validator used to run all JS code through looking for errors - https://jshint.com/
+
+[Back to top ⇧](#table-of-contents)
+
+
+-----
+
+## Testing
+
+
+### Validation of Code Testing
+
+#### HTML
+
+All Pages tested using [W3C](https://validator.w3.org/nu/) HTML Validator.
+
+#### CSS
+
+All Pages tested using [W3C](https://jigsaw.w3.org/css-validator/) CSS Validator.
+
+#### Javascript
+
+All JS and JQuery tested using [JSHint](https://jshint.com/) Javascript Validator.
+
+
+-----
+
+## Deployment
+
+This website was developed in Gitpod and pushed to the remote repositorie on GitHub. The live page is hosted on GitHub Pages via the following procedure: 
+
+1. From the project's [repository](https://github.com/emidiovaleretto/covid-19-dashboard-ms2-project), go to the **Settings** tab.
+2. From the left-hand menu, select the **Pages** tab.
+3. Under the **Source** section, select the **Main** branch from the drop-down menu and click **Save**.
+4. A message will be displayed to indicate a successful deployment to GitHub pages and provide the live link.
+5. The live link can be found here - [Live Site](https://emidiovaleretto.github.io/covid-19-dashboard-ms2-project/)
+
+
+-----
+
+### Forking the GitHub Repository and Running this Project Locally
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original 
+repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+
+3. You should now have a copy of the original repository in your GitHub account.
+
+[Back to top ⇧](#table-of-contents)
+
+
+-----
+
+## Credits
+
+### Media
+
+- [Table of contents](https://ecotrust-canada.github.io/markdown-toc/)
+
+- [Code Institute](https://codeinstitute.net/)
+
+- [Font Awesome](https://fontawesome.com/)
+
+### Acknowledgements
+
+I would like to take the opportunity to thank:
+
+ - My family, friends and colleagues for their advice, support and help with testing.
+ - To my mentor Felipe Alarcon for his feedback, advice, support and, above all, for his patience.
+ - All Code Institute Tutors and Community on Slack for the peer reviews and advice.
