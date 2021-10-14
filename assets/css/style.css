@@ -61,6 +61,7 @@ body {
 
 .form-select {
     padding: 2px;
+    width: auto;
 }
 
 .box {

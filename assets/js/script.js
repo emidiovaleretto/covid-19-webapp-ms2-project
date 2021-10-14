@@ -11,11 +11,11 @@ function themeMode(backgroundColor, backgroundColorBoxes, fontColor, boxShadow) 
 
     body.style.backgroundColor = backgroundColor;
 
-        for (let i = 0; i < box.length; i++) {
-            box[i].style.backgroundColor = backgroundColorBoxes;
-            box[i].style.color = fontColor;
-            box[i].style.boxShadow = boxShadow;
-        }
+    for (let i = 0; i < box.length; i++) {
+        box[i].style.backgroundColor = backgroundColorBoxes;
+        box[i].style.color = fontColor;
+        box[i].style.boxShadow = boxShadow;
+    }
 }
 
 function changeBackgroundColor(event) {
@@ -26,7 +26,7 @@ function changeBackgroundColor(event) {
 
         this.classList.replace('btn-outline-dark', 'btn-outline-warning');
         themeMode('#FFFFFF', '#e9e9e9', '#000000', '8px 8px 10px #3B3C39')
-        
+
     }
     else {
 
@@ -71,7 +71,7 @@ function addData(data) {
 
     /* This function add data to the HTML document. */
 
-    lastUpdate.innerHTML = data.Date;
+    lastUpdate.innerHTML = formatDate(data.Date);
     newConfirmed.innerHTML = decimalPoint(data.NewConfirmed);
     totalConfirmed.innerHTML = decimalPoint(data.TotalConfirmed);
     dailyDeaths.innerHTML = decimalPoint(data.NewDeaths);
@@ -132,6 +132,48 @@ function decimalPoint(number) {
        three digits in the number given as argument. */
 
     return number.toLocaleString('pt-Br');
+}
+
+
+function formatDate(date) {
+
+    /* This function converts a date to a string format. */
+
+    date = new Date(date);
+
+    const months = [
+        'January', 
+        'February', 
+        'March', 
+        'April', 
+        'May', 
+        'June', 
+        'July', 
+        'August', 
+        'September', 
+        'October', 
+        'November', 
+        'December'
+    ];
+
+    const days = [
+        'Sunday', 
+        'Monday', 
+        'Tuesday', 
+        'Wednesday', 
+        'Thursday', 
+        'Friday', 
+        'Saturday'
+    ];
+
+    let dayOfWeek = days[date.getDay()];
+    let monthName = months[date.getMonth()];
+    let day = date.getDate();
+    let year = date.getFullYear();
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+    
+    return `${dayOfWeek}, ${monthName} ${day} ${year} ${hour}:${minute}`
 }
 
 
