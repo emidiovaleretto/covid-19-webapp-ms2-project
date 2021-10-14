@@ -37,20 +37,21 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navigation">
+                    
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a href="https://api.covid19api.com/summary" target="_blank"
                                 title="covid19 api documentation" class="nav-link">API</a>
                         </li>
                     </ul>
-                </div>
 
-                <!-- Font Awesome Icon -->
-                <div class="col-sm-auto d-none d-sm-block">
-                    <i class="fas fa-lightbulb btn btn-outline-dark" id="clickable-icon"></i>
-                </div>
-                <!-- End Font Awesome Icon -->
+                    <!-- Font Awesome Icon -->
+                    <div class="col-xs-auto">
+                        <i class="fas fa-lightbulb btn btn-outline-dark" id="clickable-icon"></i>
+                    </div>
+                    <!-- End Font Awesome Icon -->
 
+                </div>
             </div>
         </nav>
         <!-- End Navbar -->
@@ -63,20 +64,20 @@
         <div class="container">
 
             <div class="row markup align-items-center box mt-3">
-                <div class="col-md-6">
+                <div class="col-md-10">
                     <h3>COVID-19 Dashboard</h3>
                     <p>Last updated on: <span id="last-updated"></span></p>
 
-                    <form class="mt-2" action="#">
+                    <form action="#">
                         <label for="country">Country:</label>
-                        <select class="form-select p-1" id="country" name="country" onChange="getSelectedCountry(this);">
-                            <option id="selected-country" value="" selected disabled>Select the Country</option>
+                        <select class="form-select" id="country" name="country" onChange="getSelectedCountry(this);">
+                            <option value="" selected disabled>Select the Country</option>
                             <option id="selected-country" value="all">All</option>
                         </select>
                     </form>
                 </div>
 
-                <div class="col-md-6 d-none d-md-block">
+                <div class="col-md-2 d-none d-lg-block">
                     <img class="flag" id="flag" src="./assets/img/global.png" alt="Global Image">
                 </div>
 
