@@ -52,19 +52,26 @@ window.addEventListener("load", function () {
 
 
 const url = 'https://api.covid19api.com/summary';
+
 async function coronavirusDataApi() {
 
     /* This function loads the data from the API. */
 
-    const response = await fetch(url);
-    const data = await response.json();
-    const globalData = data.Global;
-    const countries = data.Countries;
+    try {
 
-    country = countries;
-    global = globalData;
+        const response = await fetch(url);
+        const data = await response.json();
+        const globalData = data.Global;
+        const countries = data.Countries;
 
-    loadCountryList();
+        country = countries;
+        global = globalData;
+
+        loadCountryList();
+
+    } catch (error) {
+        alert('Oops! It seems there is an issue with the api response. Please try again later.');
+    }
 }
 
 function addData(data) {
@@ -142,27 +149,27 @@ function formatDate(date) {
     date = new Date(date);
 
     const months = [
-        'January', 
-        'February', 
-        'March', 
-        'April', 
-        'May', 
-        'June', 
-        'July', 
-        'August', 
-        'September', 
-        'October', 
-        'November', 
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
         'December'
     ];
 
     const days = [
-        'Sunday', 
-        'Monday', 
-        'Tuesday', 
-        'Wednesday', 
-        'Thursday', 
-        'Friday', 
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
         'Saturday'
     ];
 
@@ -172,7 +179,7 @@ function formatDate(date) {
     let year = date.getFullYear();
     let hour = date.getHours();
     let minute = date.getMinutes();
-    
+
     return `${dayOfWeek}, ${monthName} ${day} ${year} ${hour}:${minute}`
 }
 
