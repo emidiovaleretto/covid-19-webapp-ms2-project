@@ -1,4 +1,3 @@
-let log = console.log;
 let body = document.body;
 let box = document.getElementsByClassName("box-container");
 
@@ -25,13 +24,13 @@ function changeBackgroundColor(event) {
     if (this.classList.contains('btn-outline-dark')) {
 
         this.classList.replace('btn-outline-dark', 'btn-outline-warning');
-        themeMode('#FFFFFF', '#e9e9e9', '#000000', '8px 8px 10px #3B3C39')
+        themeMode('#FFFFFF', '#e9e9e9', '#000000', '8px 8px 10px #3B3C39');
 
     }
     else {
 
         this.classList.replace('btn-outline-warning', 'btn-outline-dark');
-        themeMode('#181818', '#3B3C39', '#FFFFFF', '8px 8px 20px #000000')
+        themeMode('#181818', '#3B3C39', '#FFFFFF', '8px 8px 20px #000000');
     }
 }
 
@@ -103,7 +102,8 @@ function loadCountryList() {
     /* This function loads the country list and append it to the <option> HTML tag. */
 
     for (let i = 0; i < country.length; i++) {
-        $('select').append($('<option>', {
+        $('select').append(
+            $('<option>', {
             value: country[i].Slug,
             text: country[i].Country
         }));
@@ -127,9 +127,7 @@ function toCapitalize(str) {
         str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
     }
 
-    newString = str.join('-');
-
-    return newString;
+    return str.join('-');
 }
 
 
@@ -180,15 +178,15 @@ function formatDate(date) {
     let hour = date.getHours();
     let minute = date.getMinutes();
 
-    return `${dayOfWeek}, ${monthName} ${day} ${year} ${hour}:${minute}`
+    return `${dayOfWeek}, ${monthName} ${day} ${year} ${hour}:${minute}`;
 }
 
 
-function getSelectedCountry(select) {
+function getSelectedCountry(event) {
 
     /* This function gets the country seleted from <select> input. */
 
-    let selectedCountry = select.options[select.selectedIndex].text;
+    let selectedCountry = this.options[this.selectedIndex].text;
 
     for (let i = 0; i < country.length; i++) {
 
@@ -198,7 +196,7 @@ function getSelectedCountry(select) {
 
             let countrySlug = toCapitalize(country[i].Slug);
 
-            const url = `https://icons.iconarchive.com/icons/wikipedia/flags/1024/${country[i].CountryCode}-${countrySlug}-Flag-icon.png`
+            const url = `https://icons.iconarchive.com/icons/wikipedia/flags/1024/${country[i].CountryCode}-${countrySlug}-Flag-icon.png`;
             countryFlag.setAttribute('src', url);
             countryFlag.setAttribute('alt', `${country[i].Country} Flag`);
 
@@ -212,3 +210,6 @@ function getSelectedCountry(select) {
     }
 
 }
+
+let select = document.getElementById('country');
+select.addEventListener('change', getSelectedCountry);
