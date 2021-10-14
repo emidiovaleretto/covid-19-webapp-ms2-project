@@ -202,7 +202,7 @@ function getSelectedCountry(select) {
             countryFlag.setAttribute('src', url);
             countryFlag.setAttribute('alt', `${country[i].Country} Flag`);
 
-        } else if (selectedCountry === 'All') {
+        } else if (selectedCountry === 'Worldwide') {
             addData(global);
 
             let path = "./assets/img/global.png";
