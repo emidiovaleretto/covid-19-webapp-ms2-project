@@ -144,6 +144,7 @@ As a site owner, I would like to provide users with the latest data about COVID-
 
 	*   Responsive on all device sizes.
 	*   Interactive elements: background color changeable.
+	*   When users choose a country, its flag is shown.
 
 5. _Surface Plane_
 
@@ -201,7 +202,13 @@ As a site owner, I would like to provide users with the latest data about COVID-
 
 ### Bugs and Fixes Implemented after Testing
 
-* Bug: for some reason I cannot predict, the API is not computing the Daily Recovered and Total of Recovered.
+#### Bugs: 
+
+1. for some reason I cannot predict, the API is not computing the Daily Recovered and Total of Recovered.
+
+2. Some countries have more than one single word, like United States of America or United Kingdom, so the URL takes each name with the first capital letter <code>IE-Ireland-Flag-icon</code>. So I created a function that capitalize the first letter of each word in the variable so I can replace to the flag's URL. 
+
+That way I got to solve the problem.
 
 ### Features left to Implement
 
@@ -249,6 +256,10 @@ https://www.w3.org/Style/CSS/Overview.en.html
 1. **[Am I Responsive?](http://ami.responsivedesign.is/)** : was used in order to see responsive design throughout the process and to generate mockup imagery to be used.
 
 2. **[Responsive Design Tester](https://www.responsivedesignchecker.com/)** : was used to see the responsivity throughout an array of devices (screen sizes) and resolutions. 
+
+3. **[Icon Archive](https://icons.iconarchive.com/)** : was used to display the flag of each chosen country.
+
+* Basically I take the URL and replace its last part with the name of the country. For example, the URL is https://icons.iconarchive.com/icons/wikipedia/flags/1024/<code>the-country-chosen.png</code>. if I want to display the Irish flag I just replace IE-Ireland-Flag-icon.png OR BR-Brazil-Flag-icon.png to display the Brazilian flag and so on. it works perfectly fine.
 
 
 -----
@@ -333,6 +344,8 @@ repository by using the following steps...
 - [Code Institute](https://codeinstitute.net/)
 
 - [Font Awesome](https://fontawesome.com/)
+
+- [Icon Archive](https://icons.iconarchive.com/)
 
 ### Acknowledgements
 
