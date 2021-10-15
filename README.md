@@ -12,6 +12,7 @@ The live link can be found <a href="https://emidiovaleretto.github.io/covid-19-d
     - [Why a COVID-19 application?](#why-a-covid-19-application)
     - [Key Project Goals](#key-project-goals)
     - [Design](#design)
+      - [Wireframes](#wireframes)
       - [Design Process](#design-process)
   - [User Stories](#user-stories)
     - [Target Audience](#target-audience)
@@ -64,9 +65,27 @@ As a site owner, I would like to provide users with the latest data about COVID-
 
 -----
 
-### Design
+## Design
 
-#### Design Process
+### _Wireframes_
+
+* Here are the wireframes created in our initial planning stage.
+
+<details><summary>Home Page - Desktop</summary>
+    <img src="./documents/wireframes/wireframe-1600px.png">
+</details>
+
+<details><summary>Home Page - Tablets</summary>
+    <img src="./documents/wireframes/wireframe-728px.png">
+</details>
+
+<details><summary>Home Page - Mobiles</summary>
+    <img src="./documents/wireframes/wireframe-414px.png">
+</details>
+
+------
+
+### Design Process
 
 1. _Strategy Plane_
    
