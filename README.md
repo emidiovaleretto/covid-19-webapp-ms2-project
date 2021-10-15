@@ -35,6 +35,7 @@ The live link can be found <a href="https://emidiovaleretto.github.io/covid-19-d
     - [Content](#content)
     - [Media](#media)
     - [Acknowledgements](#acknowledgements)
+  - [Author](#author)
 
 ## Introduction
 
@@ -346,6 +347,8 @@ repository by using the following steps...
 
 3. You should now have a copy of the original repository in your GitHub account.
 
+4. Run the index.html file in your local browser.
+
 [Back to top ⇧](#table-of-contents)
 
 
@@ -370,3 +373,11 @@ I would like to take the opportunity to thank:
  - My family, friends and colleagues for their advice, support and help with testing.
  - To my mentor Felipe Alarcon for his feedback, advice, support and, above all, for his patience.
  - All Code Institute Tutors and Community on Slack for the peer reviews and advice.
+
+## Author
+
+Made with  ❤️  by <b>Emidio Valereto</b>  👋🏽  Get in touch!
+
+[![Linkedin Badge](https://img.shields.io/badge/-Emidio-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/emidiovalereto/)](https://www.linkedin.com/in/emidiovalereto/) [![Gmail Badge](https://img.shields.io/badge/-emidio.valereto@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:emidio.valereto@gmail.com)](mailto:emidio.valereto@gmail.com)
+
+[Back to top ⇧](#table-of-contents)
