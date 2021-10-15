@@ -32,16 +32,18 @@
                     <h1 class="logo"><img src="./assets/img/coronavirus-logo.png" alt="Logo">Covid-19</h1>
                 </a>
 
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#navigation">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navigation"
+                    aria-label="Open/Close menu" role="button" aria-pressed="true">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navigation">
-                    
+
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="https://api.covid19api.com/summary" target="_blank"
-                                title="covid19 api documentation" class="nav-link">API</a>
+                            <a href="https://api.covid19api.com/summary"
+                                aria-label="Check the API Json file (opens in a new tab)." target="_blank"
+                                title="covid19 api documentation" class="nav-link" rel="noopener">API</a>
                         </li>
                     </ul>
 
@@ -65,7 +67,7 @@
 
             <div class="row box-container align-items-center box mt-3">
                 <div class="col-md-10">
-                    <h3>COVID-19 Dashboard</h3>
+                    <h2>COVID-19 Dashboard</h2>
                     <p>Last updated on: <span id="last-updated"></span></p>
 
                     <form action="#">
@@ -86,32 +88,32 @@
             <div class="row mt-3 justify-content-center">
 
                 <div class="col-lg-5 box-container box">
-                    <h4>New Confirmed:</h4>
+                    <h3>New Confirmed:</h3>
                     <p class="display-4 text-center" id="new-confirmed">0</p>
                 </div>
 
                 <div class="col-lg-5 box-container box">
-                    <h4>Total Confirmed:</h4>
+                    <h3>Total Confirmed:</h3>
                     <p class="display-4 text-center" id="total-confirmed">0</p>
                 </div>
 
                 <div class="col-lg-5 box-container box">
-                    <h4>Daily Deaths:</h4>
+                    <h3>Daily Deaths:</h3>
                     <p class="display-4 text-center" id="daily-deaths">0</p>
                 </div>
 
                 <div class="col-lg-5 box-container box">
-                    <h4>Total of Deaths:</h4>
+                    <h3>Total of Deaths:</h3>
                     <p class="display-4 text-center" id="total-deaths">0</p>
                 </div>
 
                 <div class="col-lg-5 box-container box">
-                    <h4>Daily Recovered:</h4>
+                    <h3>Daily Recovered:</h3>
                     <p class="display-4 text-center" id="daily-recovered">0</p>
                 </div>
 
                 <div class="col-lg-5 box-container box">
-                    <h4>Total of Recovered:</h4>
+                    <h3>Total of Recovered:</h3>
                     <p class="display-4 text-center" id="total-recovered">0</p>
                 </div>
 
