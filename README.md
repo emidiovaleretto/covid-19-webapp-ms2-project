@@ -30,6 +30,8 @@ The live link can be found <a href="https://emidiovaleretto.github.io/covid-19-d
       - [HTML](#html)
       - [CSS](#css)
       - [Javascript](#javascript)
+    - [Accessibility and Performance Testing](#accessibility-and-performance-testing)
+      - [What is considered as accessibility?](#what-is-considered-as-accessibility)
   - [Deployment](#deployment)
     - [Forking the GitHub Repository and Running this Project Locally](#forking-the-github-repository-and-running-this-project-locally)
   - [Credits](#credits)
@@ -102,8 +104,7 @@ As a site owner, I would like to provide users with the latest data about COVID-
 
 	* As a site creator we would like :
 
-	  * To provide safe and friendly site that anyone can gain and share information in order to tackle their everyday challenge at their workplace
-	  * To provide safe and friendly site that any people can gain and share information in order to tackle their everyday challenge at their workplace	  
+	  * To provide a safe and user-friendly website that anyone can obtain and share information about the new coronavirus pandemic in order to meet their daily challenges in their workplace.	  
 
 2. _Scope Plane_
 
@@ -331,16 +332,30 @@ https://www.gitpod.io/
 
 #### HTML
 
-All Pages tested using [W3C](https://validator.w3.org/nu/) HTML Validator.
+ - Page tested using [W3C](https://validator.w3.org/nu/) HTML Validator.
 
 #### CSS
 
-All Pages tested using [W3C](https://jigsaw.w3.org/css-validator/) CSS Validator.
+ - Page tested using [W3C](https://jigsaw.w3.org/css-validator/) CSS Validator.
 
 #### Javascript
 
-All JS and JQuery tested using [JSHint](https://jshint.com/) Javascript Validator.
+- All Javascript tested using [JSHint](https://jshint.com/) Javascript Validator.
 
+### Accessibility and Performance testing
+
+#### What is considered as accessibility?
+
+ - Accessibility is <strong>the practice of making your websites usable by as many people as possible</strong>.
+ - We traditionally think of this as being about people with disabilities, but the practice of making sites      accessible also benefits other groups such as those using mobile devices, or those with slow network connections.
+  
+      - <em>Source: </em><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility"><b>MDN Web Docs</b></a>
+  
+- Accessibility and web performance are not features, they are the <strong>baseline</strong>!
+
+<details><summary>Lighthouse Test Result</summary>
+    <img src="./documents/readme-images/lighthouse-screenshot.png">
+</details>
 
 -----
 
