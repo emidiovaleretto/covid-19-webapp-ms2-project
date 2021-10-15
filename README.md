@@ -239,7 +239,7 @@ countryFlag.setAttribute('src', url);
 countryFlag.setAttribute('alt', `${country[i].Country} Flag`);
 ```
 
-* As there are some countries with more than a single word, such as the **United States of America** or **New Zealand** or even with three words such as **Papua New Guinea**. For those countries, the variable <code>country.Slug</code> returns the country's name, however, all lowercase.
+* As there are some countries with more than a single word, such as the **United Kingdom** or **New Zealand** or even with three words such as **United States of America** or **Papua New Guinea**. For those countries, the variable <code>country.Slug</code> returns the country's name, however, all lowercase.
   
   * Before toCapitalize() -> <code> united-states-of-america</code>.
   * After toCapitalize() -> <code>United-States-Of-America</code>. 
@@ -293,7 +293,9 @@ https://www.w3.org/Style/CSS/Overview.en.html
 
 2. **[Responsive Design Tester](https://www.responsivedesignchecker.com/)** : was used to see the responsivity throughout an array of devices (screen sizes) and resolutions. 
 
-3. **[Icon Archive](https://icons.iconarchive.com/)** : was used to display the flag of each chosen country.
+3. **[Wireframes](https://balsamiq.com/wireframes/)** : was used to create the mockups in the planning stage.
+
+4. **[Icon Archive](https://icons.iconarchive.com/)** : was used to display the flag of each chosen country.
 
 * Basically I take the URL and replace its last part with the name of the country. For example, the URL is https://icons.iconarchive.com/icons/wikipedia/flags/1024/<code>the-country-chosen.png</code>. if I want to display the Irish flag I just replace IE-Ireland-Flag-icon.png OR BR-Brazil-Flag-icon.png to display the Brazilian flag and so on. it works perfectly fine.
 
@@ -344,7 +346,7 @@ All JS and JQuery tested using [JSHint](https://jshint.com/) Javascript Validato
 
 ## Deployment
 
-This website was developed in Gitpod and pushed to the remote repositorie on GitHub. The live page is hosted on GitHub Pages via the following procedure: 
+This website was developed in Gitpod and pushed to the remote repository on GitHub. The live page was hosted on GitHub Pages through the following procedure: 
 
 1. From the project's [repository](https://github.com/emidiovaleretto/covid-19-dashboard-ms2-project), go to the **Settings** tab.
 2. From the left-hand menu, select the **Pages** tab.
@@ -383,6 +385,8 @@ repository by using the following steps...
 
 - [Font Awesome](https://fontawesome.com/)
 
+- [Wireframes](https://balsamiq.com/wireframes/)
+
 - [Icon Archive](https://icons.iconarchive.com/)
 
 ### Acknowledgements
@@ -395,7 +399,7 @@ I would like to take the opportunity to thank:
 
 ## Author
 
-Made with  ❤️  by <b>Emidio Valereto</b>  👋🏽  Get in touch!
+Made with ❤️ by <b>Emidio Valereto</b> 👋🏽 Get in touch!
 
 [![Linkedin Badge](https://img.shields.io/badge/-Emidio-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/emidiovalereto/)](https://www.linkedin.com/in/emidiovalereto/) [![Gmail Badge](https://img.shields.io/badge/-emidio.valereto@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:emidio.valereto@gmail.com)](mailto:emidio.valereto@gmail.com)
 
