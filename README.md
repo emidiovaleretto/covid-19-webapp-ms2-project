@@ -1,6 +1,6 @@
 # **Coronavirus COVID-19 - Dashboard** 
 
-![Mockup](./assets/img/mockup.png)
+![Mockup](./documents/readme-images/mockup.png)
 
 The live link can be found <a href="https://emidiovaleretto.github.io/covid-19-dashboard-ms2-project/" target="_blank" rel="noopener">here</a>.
 
