@@ -204,11 +204,27 @@ As a site owner, I would like to provide users with the latest data about COVID-
 
 #### Bugs: 
 
-1. for some reason I cannot predict, the API is not computing the Daily Recovered and Total of Recovered.
+1. For some reason I cannot predict, the API is not computing the Daily Recovered and Total of Recovered.
 
-2. Some countries have more than one single word, like United States of America or United Kingdom, so the URL takes each name with the first capital letter <code>IE-Ireland-Flag-icon</code>. So I created a function that capitalize the first letter of each word in the variable so I can replace to the flag's URL. 
+2. Some countries have more than one single word, like United States of America or United Kingdom, so the URL takes each name with the first capital letter, e.g. <code>IE-Ireland-Flag-icon</code>. 
+   1. My solution was to created a function that capitalize the first letter of each word in the variable so I can replace to the flag's URL. 
+   
+```
+let countrySlug = toCapitalize(country[i].Slug);
 
-That way I got to solve the problem.
+const url = `https://icons.iconarchive.com/icons/wikipedia/flags/1024/${country[i].CountryCode}-${countrySlug}-Flag-icon.png`;
+
+countryFlag.setAttribute('src', url);
+
+countryFlag.setAttribute('alt', `${country[i].Country} Flag`);
+```
+
+* As there are some countries with more than a single word, such as the **United States of America** or **New Zealand** or even with three words such as **Papua New Guinea**. For those countries, the variable <code>country.Slug</code> returns the country's name, however, all lowercase.
+  
+  * Before toCapitalize() -> <code> united-states-of-america</code>.
+  * After toCapitalize() -> <code>United-States-Of-America</code>. 
+  
+* That way I got to solve the problem.
 
 ### Features left to Implement
 
