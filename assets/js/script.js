@@ -107,7 +107,7 @@ function loadCountriesList() {
         let option = document.createElement('option');
         option.value = option.textContent = country[i].Slug;
         option.text = option.textContent = country[i].Country;
-        select.add(option);
+        select.append(option);
     }
 }
 
@@ -119,6 +119,21 @@ function decimalPoint(number) {
 
     return number.toLocaleString('pt-Br');
 }
+
+function addZeroDigitToHour(number) {
+
+    /* This functions adds the zero digit to the hour/minute 
+        if hour/minute is less than 10. E.g., time: 13:05 
+    */
+
+    if (number < 10) {
+        return '0' + number;
+
+    } else {
+        return number;
+    }
+}
+
 
 
 function formatDate(date) {
@@ -159,7 +174,7 @@ function formatDate(date) {
     let hour = date.getHours();
     let minute = date.getMinutes();
 
-    return `${dayOfWeek}, ${monthName} ${day} ${year} ${hour}:${minute}`;
+    return `${dayOfWeek}, ${monthName} ${day}, ${year} - ${[hour, minute].map(addZeroDigitToHour).join(':')}`;
 }
 
 
