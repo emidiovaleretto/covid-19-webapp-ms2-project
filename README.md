@@ -23,7 +23,7 @@ The live link can be found <a href="https://emidiovaleretto.github.io/covid-19-d
     - [Features left to Implement](#features-left-to-implement)
   - [Technologies Used](#technologies-used)
     - [Libraries, Frameworks and other softwares used](#libraries-frameworks-and-other-softwares-used)
-    - [API's](#apis)
+    - [Coronavirus COVID-19 API](#coronavirus-covid-19-api)
     - [Tools](#tools)
   - [Testing](#testing)
     - [Validation of Code Testing](#validation-of-code-testing)
@@ -280,15 +280,15 @@ https://www.w3.org/Style/CSS/Overview.en.html
 
 1. **[Font Awesome](https://fontawesome.com/)** : was used throughout all pages to add icons in order to create a better visual experience for UX purposes.
 
-### API's
+### Coronavirus COVID-19 API
 
-1. **COVID-19 [API](https://api.covid19api.com/summary)** : the request returns a summary of Covid-19 in each country.
+1. **COVID-19 [API](https://covid19api.com/)** : A free API for data on the Coronavirus.
 
 ### Frameworks
 
-1. **[Bootstrap](https://getbootstrap.com/)** : for quickly design and customize responsive mobile-first sites.
+1. **[Bootstrap](https://getbootstrap.com/)** : was used for quickly design and customize responsive mobile-first sites.
 
-### Open Source Softwares
+### Other Softwares
 
 1. **[Am I Responsive?](http://ami.responsivedesign.is/)** : was used in order to see responsive design throughout the process and to generate mockup imagery to be used.
 
@@ -296,9 +296,9 @@ https://www.w3.org/Style/CSS/Overview.en.html
 
 3. **[Wireframes](https://balsamiq.com/wireframes/)** : was used to create the mockups in the planning stage.
 
-4. **[Icon Archive](https://icons.iconarchive.com/)** : was used to display the flag of each chosen country.
+4. **[Flagpedia.net](https://flagpedia.net/)** : Flagpedia.net is a website that provide a source of country flags of the world. I downloaded all country flags from this website and saved it in the all-countries-flag folder on my own directory.
 
-* Basically I take the URL and replace its last part with the name of the country. For example, the URL is https://icons.iconarchive.com/icons/wikipedia/flags/1024/<code>the-country-chosen.png</code>. if I want to display the Irish flag I just replace IE-Ireland-Flag-icon.png OR BR-Brazil-Flag-icon.png to display the Brazilian flag and so on. it works perfectly fine.
+5. **[Tiny PNG](https://tinypng.com/)** : was used to reduce the size of the images throughout the page.
 
 
 -----
@@ -402,7 +402,7 @@ repository by using the following steps...
 
 - [Wireframes](https://balsamiq.com/wireframes/)
 
-- [Icon Archive](https://icons.iconarchive.com/)
+- [Flagpedia.net](https://flagpedia.net/)
 
 ### Acknowledgements
 
