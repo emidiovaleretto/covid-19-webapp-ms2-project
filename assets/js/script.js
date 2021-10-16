@@ -66,7 +66,8 @@ async function coronavirusDataApi() {
         country = countries;
         global = globalData;
 
-        loadCountryList();
+        loadCountriesList();
+        addData(global);
 
     } catch (error) {
         alert('Oops! It seems there is an issue with the api response. Please try again later.');
@@ -97,16 +98,16 @@ let totalRecovered = document.getElementById('total-recovered');
 let countryFlag = document.getElementById('flag');
 
 
-function loadCountryList() {
+function loadCountriesList() {
 
     /* This function loads the country list and append it to the <option> HTML tag. */
 
     for (let i = 0; i < country.length; i++) {
-        $('select').append(
-            $('<option>', {
-            value: country[i].Slug,
-            text: country[i].Country
-        }));
+        
+        let option = document.createElement('option');
+        option.value = option.textContent = country[i].Slug;
+        option.text = option.textContent = country[i].Country;
+        select.add(option);
     }
 }
 
@@ -199,12 +200,6 @@ function getSelectedCountry(event) {
             const url = `https://icons.iconarchive.com/icons/wikipedia/flags/1024/${country[i].CountryCode}-${countrySlug}-Flag-icon.png`;
             countryFlag.setAttribute('src', url);
             countryFlag.setAttribute('alt', `${country[i].Country} Flag`);
-
-        } else if (selectedCountry === 'Worldwide') {
-            addData(global);
-
-            let path = "./assets/img/global.png";
-            countryFlag.setAttribute('src', path);
 
         }
     }
