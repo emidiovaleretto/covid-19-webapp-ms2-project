@@ -10,6 +10,7 @@ The live link can be found <a href="https://emidiovaleretto.github.io/covid-19-d
   - [UX](#ux)
     - [Overview](#overview)
     - [Why a COVID-19 application?](#why-a-covid-19-application)
+    - [Coronavirus COVID-19 API](#coronavirus-covid-19-api)
     - [Key Project Goals](#key-project-goals)
     - [Design](#design)
       - [Wireframes](#wireframes)
@@ -23,7 +24,7 @@ The live link can be found <a href="https://emidiovaleretto.github.io/covid-19-d
     - [Features left to Implement](#features-left-to-implement)
   - [Technologies Used](#technologies-used)
     - [Libraries, Frameworks and other softwares used](#libraries-frameworks-and-other-softwares-used)
-    - [Coronavirus COVID-19 API](#coronavirus-covid-19-api)
+    - [API's](#apis)
     - [Tools](#tools)
   - [Testing](#testing)
     - [Validation of Code Testing](#validation-of-code-testing)
@@ -59,6 +60,140 @@ COVID-19 application is an online dashboard where users can choose a specific co
 ### **Why a COVID-19 application?**
 
 The idea behind the COVID-19 dashboard project arose from the need for people to be as up-to-date as possible about the outbreak of the new coronavirus. As an Internet user, I always try to know the latest information about COVID-19 disease in my country and around the world. Thinking about that, I decided to develop this application and also because it is the most recent topic at the moment.
+
+### **Coronavirus COVID-19 API**
+
+![API Logo](documents/readme-images/api-logo.png)
+
+This COVID-19 data source is operated by the Johns Hopkins University Center for Systems Science and Engineering team. You can find more information on https://systems.jhu.edu
+
+The Johns Hopkins Coronavirus Resource Center (CRC) is a continually updated source of COVID-19 data and expert guidance, with collaboration from other data sources around the world.
+
+ - Agreegated Data Sources:
+   - **World Health Organization (WHO)**: https://www.who.int/
+   - **European Center for Disease Prevention and Control (ECDC)**: https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases/
+   - **WorldoMeters**: https://www.worldometers.info/coronavirus/
+   - **COVID Tracking Project**: https://covidtracking.com/data
+
+  And many others.
+
+  - Coronavirus COVID-19 API documentation
+
+    - GET Default
+      - <code>https://api.covid19api.com/</code>
+  
+```
+Example Request
+
+curl --location --request GET 'https://api.covid19api.com/'
+
+Example Response
+
+{
+  "allRoute": 
+  {
+    "Name": "Get All Data",
+    "Description": "Returns all data in the system. Warning: this request returns 8MB+ and takes 5+ seconds",
+    "Path": "/all"
+  },
+  "countriesRoute": 
+  {
+    "Name": "Get List Of Countries",
+    "Description": "Returns all countries and associated provinces. The country_slug variable is used for country specific data",
+    "Path": "/countries"
+  },
+  "countryStatusDayOneLiveRoute": 
+  {
+    "Name": "Get List Of Cases Per Country Per Province By Case Type From The First Recorded Case With Live Count",
+    "Description": "Returns all cases by case type for a country from the first recorded case with the latest record being the live count. Country must be the country_slug from /countries. Cases must be one of: confirmed, recovered, deaths",
+    "Path": "/dayone/country/:country/status/:status/live"
+  }
+
+}
+
+```
+
+  - GET Summary
+    - <code>https://api.covid19api.com/summary</code>
+
+```
+Example Request
+
+curl --location --request GET 'https://api.covid19api.com/summary/
+
+Example Response
+
+{
+  "Global": {
+    "NewConfirmed": 100282,
+    "TotalConfirmed": 1162857,
+    "NewDeaths": 5658,
+    "TotalDeaths": 63263,
+    "NewRecovered": 15405,
+    "TotalRecovered": 230845
+  },
+  "Countries": [
+    {
+      "Country": "ALA Aland Islands",
+      "CountryCode": "AX",
+      "Slug": "ala-aland-islands",
+      "NewConfirmed": 0,
+      "TotalConfirmed": 0,
+      "NewDeaths": 0,
+      "TotalDeaths": 0,
+      "NewRecovered": 0,
+      "TotalRecovered": 0,
+      "Date": "2020-04-05T06:37:00Z"
+    },
+    {
+      "Country": "Afghanistan",
+      "CountryCode": "AF",
+      "Slug": "afghanistan",
+      "NewConfirmed": 18,
+      "TotalConfirmed": 299,
+      "NewDeaths": 1,
+      "TotalDeaths": 7,
+      "NewRecovered": 0,
+      "TotalRecovered": 10,
+      "Date": "2020-04-05T06:37:00Z"
+    },
+    {
+      "Country": "Albania",
+      "CountryCode": "AL",
+      "Slug": "albania",
+      "NewConfirmed": 29,
+      "TotalConfirmed": 333,
+      "NewDeaths": 3,
+      "TotalDeaths": 20,
+      "NewRecovered": 10,
+      "TotalRecovered": 99,
+      "Date": "2020-04-05T06:37:00Z"
+    },
+    {
+      "Country": "Algeria",
+      "CountryCode": "DZ",
+      "Slug": "algeria",
+      "NewConfirmed": 80,
+      "TotalConfirmed": 1251,
+      "NewDeaths": 25,
+      "TotalDeaths": 130,
+      "NewRecovered": 28,
+      "TotalRecovered": 90,
+      "Date": "2020-04-05T06:37:00Z"
+    }
+  ],
+  "Date": "2020-04-05T06:37:00Z"
+}  
+
+```
+
+For more information, please view documentation in https://documenter.getpostman.com/view/10808728/SzS8rjbc 
+
+- Author:
+
+**Kyle Redelinghuys** - Creator/maintainer of http://covid19api.com. 
+  
+[![Twitter Badge](https://img.shields.io/badge/-@ksredelinghuys-blue?style=flat-square&logo=Twitter&logoColor=white&link=https://twitter.com/ksredelinghuys)](https://twitter.com/ksredelinghuys)
 
 ### **Key Project Goals**
 
@@ -247,6 +382,10 @@ countryFlag.setAttribute('alt', `${country[i].Country} Flag`);
   
 * That way I got to solve the problem.
 
+## ** **UPDATE** **
+
+1. I had logged the bug above but I decided to download all country flags from the <a href="https://flagpedia.net/">Flagpedia.net</a> website and keep all images on my own directory. If the website happens to go down, I will not suffer any consequences on my application.
+
 ### Features left to Implement
 
 * Text-to-Speech API. This will help many users who may struggle with reading on an electronic devices or for visually impaired users. This feature will read out what the other user has posted.
@@ -280,7 +419,7 @@ https://www.w3.org/Style/CSS/Overview.en.html
 
 1. **[Font Awesome](https://fontawesome.com/)** : was used throughout all pages to add icons in order to create a better visual experience for UX purposes.
 
-### Coronavirus COVID-19 API
+### API's
 
 1. **COVID-19 [API](https://covid19api.com/)** : A free API for data on the Coronavirus.
 
@@ -369,8 +508,6 @@ This website was developed in Gitpod and pushed to the remote repository on GitH
 4. A message will be displayed to indicate a successful deployment to GitHub pages and provide the live link.
 5. The live link can be found here - [Live Site](https://emidiovaleretto.github.io/covid-19-dashboard-ms2-project/)
 
-
------
 
 ### Forking the GitHub Repository and Running this Project Locally
 
