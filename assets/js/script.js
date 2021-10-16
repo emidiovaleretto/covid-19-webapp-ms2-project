@@ -112,26 +112,6 @@ function loadCountriesList() {
 }
 
 
-function toCapitalize(str) {
-
-    /* This function receives a string and capitalize 
-        the first letter of each word in a string. 
-        
-       This function was created to format the
-        string to fit the url that loads the flag image.
-        
-        */
-
-    str = str.split('-');
-
-    for (let i = 0; i < str.length; i++) {
-        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
-    }
-
-    return str.join('-');
-}
-
-
 function decimalPoint(number) {
 
     /* This function adds a decimal point after every
