@@ -15,6 +15,11 @@ The live link can be found <a href="https://emidiovaleretto.github.io/covid-19-d
     - [Design](#design)
       - [Wireframes](#wireframes)
       - [Design Process](#design-process)
+        - [Strategy Plane](#strategy-plane)
+        - [Scope Plane](#scope-plane)
+        - [Structure Plane](#structure-plane)
+        - [Skeleton Plane](#skeleton-plane)
+        - [Surface Plane](#surface-plane)
       - [Screenshots](#screenshots)
   - [User Stories](#user-stories)
     - [Target Audience](#target-audience)
@@ -205,27 +210,9 @@ As a site owner, I would like to provide users with the latest data about COVID-
 
 ## Design
 
-### _Wireframes_
-
-* Here are the wireframes created in our initial planning stage.
-
-<details><summary>Home Page - Desktop</summary>
-    <img src="./documents/wireframes/wireframe-1600px.png">
-</details>
-
-<details><summary>Home Page - Tablets</summary>
-    <img src="./documents/wireframes/wireframe-728px.png">
-</details>
-
-<details><summary>Home Page - Mobiles</summary>
-    <img src="./documents/wireframes/wireframe-414px.png">
-</details>
-
-------
-
 ### Design Process
 
-1. _Strategy Plane_
+1. #### _Strategy Plane_
    
    **User Stories**
    This site is created based on the following user’s expectations in mind.
@@ -242,7 +229,7 @@ As a site owner, I would like to provide users with the latest data about COVID-
 
 	  * To provide a safe and user-friendly website that anyone can obtain and share information about the new coronavirus pandemic in order to meet their daily challenges in their workplace.	  
 
-2. _Scope Plane_
+2. #### _Scope Plane_
 
 	**Features**
 	
@@ -251,7 +238,7 @@ As a site owner, I would like to provide users with the latest data about COVID-
 	 * intuitive and user-friendly layout.
 	 * The purpose of the site should be clear immediately.
 
-3. _Structure Plane_
+3. #### _Structure Plane_
 
 	**User Story:**
 
@@ -285,7 +272,23 @@ As a site owner, I would like to provide users with the latest data about COVID-
 
 	**Result:** User Story accomplished.
 
-4. _Skeleton Plane_
+4. #### _Skeleton Plane_
+
+   #### **Wireframes**
+
+     * Here are the wireframes created in the initial planning stage.
+
+       <details><summary>Home Page - Desktop</summary>
+         <img src="./documents/wireframes/wireframe-1600px.png">
+       </details>
+
+       <details><summary>Home Page - Tablets</summary>
+         <img src="./documents/wireframes/wireframe-728px.png">
+       </details>
+
+       <details><summary>Home Page - Mobiles</summary>
+         <img src="./documents/wireframes/wireframe-414px.png">
+       </details>
 
 	**Navigation:** Select field
 
@@ -303,7 +306,7 @@ As a site owner, I would like to provide users with the latest data about COVID-
 	*   Interactive elements: background color changeable.
 	*   When users choose a country, its flag is shown.
 
-5. _Surface Plane_
+5. #### _Surface Plane_
 
 **Colour Pallette**
 
