@@ -94,3 +94,9 @@ body {
 .box:nth-child(6) {
     border-left: 20px solid var(--purple);
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .flag {
+        margin-left: -50px;
+    }
+}
