@@ -15,6 +15,7 @@ The live link can be found <a href="https://emidiovaleretto.github.io/covid-19-d
     - [Design](#design)
       - [Wireframes](#wireframes)
       - [Design Process](#design-process)
+      - [Screenshots](#screenshots)
   - [User Stories](#user-stories)
     - [Target Audience](#target-audience)
     - [As a Site User I want to...](#as-a-site-user-i-want-to)
@@ -323,6 +324,32 @@ As a site owner, I would like to provide users with the latest data about COVID-
 
 * Google Fonts was used to import the fonts Lora & Poppins into the style.css file. These fonts were used throughout the site.
 
+### Screenshots
+
+<details><summary>Screenshot (Dark Mode) - Desktop</summary>
+    <img src="./documents/readme-images/screenshot-desktop-dark.png" alt="Desktop Screenshot">
+</details>
+
+<details><summary>Screenshot (Light Mode) - Desktop</summary>
+    <img src="./documents/readme-images/screenshot-desktop-light.png" alt="Desktop Screenshot">
+</details>
+
+<details><summary>Screenshot (Dark Mode) - Tablet</summary>
+    <img src="./documents/readme-images/screenshot-mobile.gif" alt="Mobile Screenshot">
+</details>
+
+<details><summary>Screenshot (Light Mode) - Tablet</summary>
+    <img src="./documents/readme-images/screenshot-mobile.gif" alt="Mobile Screenshot">
+</details>
+
+<details><summary>Screenshot (Dark Mode) - Mobile</summary>
+    <img src="./documents/readme-images/screenshot-mobile.gif" alt="Mobile Screenshot">
+</details>
+
+<details><summary>Screenshot (Light Mode) - Mobile</summary>
+    <img src="./documents/readme-images/screenshot-mobile.gif" alt="Mobile Screenshot">
+</details>
+
 [Back to top ⇧](#table-of-contents)
 
 
@@ -356,6 +383,16 @@ As a site owner, I would like to provide users with the latest data about COVID-
 
 * Navbar: a virus image followed by a COVID-19 text logo, a link to the API Json file and a lightbulb icon where the users can interact with the background, through Javascript, changing the its color to light or dark.
 
+<details><summary>Screenshot - Desktop</summary>
+    <img src="./documents/readme-images/screenshot-desktop.gif" alt="Desktop Screenshot">
+</details>
+
+<details><summary>Screenshot - Mobile</summary>
+    <img src="./documents/readme-images/screenshot-mobile.gif" alt="Mobile Screenshot">
+</details>
+
+-----
+
 ### Bugs and Fixes Implemented after Testing
 
 #### Bugs: 
@@ -382,9 +419,11 @@ countryFlag.setAttribute('alt', `${country[i].Country} Flag`);
   
 * That way I got to solve the problem.
 
-## ** **UPDATE** **
+## ** **UPDATES** **
 
 1. I had logged the bug above but I decided to download all country flags from the <a href="https://flagpedia.net/">Flagpedia.net</a> website and keep all images on my own directory. If the website happens to go down, I will not suffer any consequences on my application.
+
+2. I have contacted the creator of the API to find out about the issue with the two last data: Daily Recovered and Total of Recovered. I haven't heard back from him until the submission date of this project. 
 
 ### Features left to Implement
 
