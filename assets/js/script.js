@@ -39,7 +39,7 @@ icon.addEventListener('click', changeBackgroundColor);
 
 // Build the API
 
-let global = [];
+let globalResponse = [];
 let country = [];
 
 
@@ -64,10 +64,10 @@ async function coronavirusDataApi() {
         const countries = data.Countries;
 
         country = countries;
-        global = globalData;
+        globalResponse = globalData;
 
         loadCountriesList();
-        addData(global);
+        addData(globalResponse);
 
     } catch (error) {
         alert('Oops! It seems there is an issue with the api response. Please try again later.');
@@ -198,7 +198,7 @@ function getSelectedCountry(event) {
 
         } else if (selectedCountry === 'Worldwide') {
 
-            addData(global);
+            addData(globalResponse);
             countryFlag.setAttribute('src', "./assets/img/global.png");
             countryFlag.setAttribute('alt', "Global Image");
         }
