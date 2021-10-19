@@ -2,7 +2,7 @@
 
 ![Mockup](./documents/readme-images/mockup.png)
 
-The live link can be found <a href="https://emidiovaleretto.github.io/covid-19-dashboard-ms2-project/" target="_blank" rel="noopener">here</a>.
+The live link can be found <a href="https://emidiovaleretto.github.io/covid-19-webapp-ms2-project/" target="_blank" rel="noopener">here</a>.
 
 
 ## Table of Contents
@@ -541,13 +541,34 @@ https://www.gitpod.io/
 
  - Page tested using [W3C](https://validator.w3.org/nu/) HTML Validator.
 
+1. While debbuguing the application, I got an error saying that there was a unnecessarily attribute for element ```<button>```.  
+
+![Warning](./documents/readme-images/html-warning.png)
+
+After removed, no errors were returned.
+
+![No Warnings](./documents/readme-images/no-warnings.png)
+
+
 #### CSS
 
  - Page tested using [W3C](https://jigsaw.w3.org/css-validator/) CSS Validator.
 
+No erros were returned from CSS Validator.
+
+![CSS Validator](./documents/readme-images/css-validation.png)
+
 #### Javascript
 
 - All Javascript tested using [JSHint](https://jshint.com/) Javascript Validator.
+
+1. While debugging the application, I got an error saying that the variable "global" requires a redefinition.
+
+![JS Warning](./documents/readme-images/js-warnings.png)
+
+After removed, one waring was returned.
+
+![One Warning](./documents/readme-images/one-warning-js.png)
 
 ### Accessibility and Performance testing
 
@@ -570,11 +591,11 @@ https://www.gitpod.io/
 
 This website was developed in Gitpod and pushed to the remote repository on GitHub. The live page was hosted on GitHub Pages through the following procedure: 
 
-1. From the project's [repository](https://github.com/emidiovaleretto/covid-19-dashboard-ms2-project), go to the **Settings** tab.
+1. From the project's [repository](https://github.com/emidiovaleretto/covid-19-webapp-ms2-project), go to the **Settings** tab.
 2. From the left-hand menu, select the **Pages** tab.
 3. Under the **Source** section, select the **Main** branch from the drop-down menu and click **Save**.
 4. A message will be displayed to indicate a successful deployment to GitHub pages and provide the live link.
-5. The live link can be found here - [Live Site](https://emidiovaleretto.github.io/covid-19-dashboard-ms2-project/)
+5. The live link can be found here - [Live Site](https://emidiovaleretto.github.io/covid-19-webapp-ms2-project/)
 
 
 ### Forking the GitHub Repository and Running this Project Locally
