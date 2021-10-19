@@ -384,7 +384,7 @@ As a site owner, I would like to provide users with the latest data about COVID-
 
 ### Features Visiable across the page
 
-* Navbar: a virus image followed by a COVID-19 text logo, a link to the API Json file and a lightbulb icon where the users can interact with the background, through Javascript, changing the its color to light or dark.
+* **Navbar**: a virus image followed by a COVID-19 text logo, a link to the API Json file and a lightbulb icon where the users can interact with the background, through Javascript, changing the its color to light or dark.
 
 <details><summary>Screenshot - Desktop</summary>
     <img src="./documents/readme-images/screenshot-desktop.gif" alt="Desktop Screenshot">
@@ -393,6 +393,34 @@ As a site owner, I would like to provide users with the latest data about COVID-
 <details><summary>Screenshot - Mobile</summary>
     <img src="./documents/readme-images/screenshot-mobile.gif" alt="Mobile Screenshot">
 </details>
+
+* **Logo**: the logo image was extracted from the Pixabay website. - Image by <a href="https://pixabay.com/users/iximus-2352783/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5107804">iXimus</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5107804">Pixabay</a>
+
+![Logo](./assets/img/coronavirus-logo.png)
+
+* **Data Source link**: This link takes the user to the <a href="https://covid19api.com/">API</a> page, where they can find more information about the project.
+
+![Data Source link](./documents/readme-images/link.png)
+
+* **Lightbulb icon**: the lightbulb icon in the navigation bar is a feature that allows the user to change the background color of the page. 
+
+![Lightbulb icon](./documents/readme-images/lightbulb-icon.png)
+
+* **Main Container**: the main container displays the main title followed by a select field where the users can select the country they want to get the country figures.
+
+![Main Container](./documents/readme-images/main-container.png)
+
+* **Country Flag**: the country flag is displayed upon the users select the country they want to get the country figures. It's a feature to illustrate the country as their choice.
+
+![Country Flag](./documents/readme-images/flag.png)
+
+* **Country Figures**: the country figures are the return of the API call. After the successful response, the country figures are displayed, according to each data: _New Confirmed_, _Total Confirmed_, _Daily Deaths_, _Total of Deaths_, _Daily Recovered_ and _Total of Recovered_.
+
+![Country Figures](./documents/readme-images/figures-container.png)
+
+* **Footer**: at the bottom a message is displayed indicating the project developer.
+
+![Footer](./documents/readme-images/footer.png)
 
 -----
 
@@ -426,7 +454,7 @@ countryFlag.setAttribute('alt', `${country[i].Country} Flag`);
 
 1. I had logged the bug above but I decided to download all country flags from the <a href="https://flagpedia.net/">Flagpedia.net</a> website and keep all images on my own directory. If the website happens to go down, I will not suffer any consequences on my application.
 
-2. I have contacted the creator of the API to find out about the issue with the two last data: Daily Recovered and Total of Recovered. I haven't heard back from him until the submission date of this project. 
+2. I tried to contact the API creator, through the <a href="https://join.slack.com/t/covid19api/shared_invite/zt-ebqsatds-qaNmKiur6EYCXhtDXNwxJg">Slack</a> channel, to find out more about the problem with the last two data: Recovered Diary and Recovered Total. I didn't get a response from him until the date of submission of this project.
 
 ### Features left to Implement
 
@@ -451,8 +479,6 @@ https://developer.mozilla.org/en-US/docs/Web/HTML
 https://www.w3.org/Style/CSS/Overview.en.html
 
 3. **Javascript:** A programming language - https://www.javascript.com/
-
-4. **JQuery:** A programming language - https://jquery.com/
 
 
 -----
