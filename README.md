@@ -338,19 +338,19 @@ As a site owner, I would like to provide users with the latest data about COVID-
 </details>
 
 <details><summary>Screenshot (Dark Mode) - Tablet</summary>
-    <img src="./documents/readme-images/screenshot-mobile.gif" alt="Mobile Screenshot">
+    <img src="./documents/readme-images/screenshot-tablet-dark.png" alt="Tablet Screenshot">
 </details>
 
 <details><summary>Screenshot (Light Mode) - Tablet</summary>
-    <img src="./documents/readme-images/screenshot-mobile.gif" alt="Mobile Screenshot">
+    <img src="./documents/readme-images/screenshot-tablet-light.png" alt="Tablet Screenshot">
 </details>
 
 <details><summary>Screenshot (Dark Mode) - Mobile</summary>
-    <img src="./documents/readme-images/screenshot-mobile.gif" alt="Mobile Screenshot">
+    <img src="./documents/readme-images/screenshot-mobile-dark.jpg" alt="Mobile Screenshot">
 </details>
 
 <details><summary>Screenshot (Light Mode) - Mobile</summary>
-    <img src="./documents/readme-images/screenshot-mobile.gif" alt="Mobile Screenshot">
+    <img src="./documents/readme-images/screenshot-mobile-light.jpg" alt="Mobile Screenshot">
 </details>
 
 [Back to top ⇧](#table-of-contents)
