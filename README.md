@@ -325,9 +325,11 @@ As a site owner, I would like to provide users with the latest data about COVID-
 
 **Font**
 
-* Google Fonts was used to import the fonts Lora & Poppins into the style.css file. These fonts were used throughout the site.
+* Google Fonts was used to import the fonts **Lora** & **Poppins** into the style.css file. These fonts were used throughout the site.
 
-### Screenshots
+### **Screenshots**
+
+* Find below some screenshots of the webapp in different size devices:
 
 <details><summary>Screenshot (Dark Mode) - Desktop</summary>
     <img src="./documents/readme-images/screenshot-desktop-dark.png" alt="Desktop Screenshot">
@@ -346,11 +348,11 @@ As a site owner, I would like to provide users with the latest data about COVID-
 </details>
 
 <details><summary>Screenshot (Dark Mode) - Mobile</summary>
-    <img src="./documents/readme-images/screenshot-mobile-dark.jpg" alt="Mobile Screenshot">
+    <img src="./documents/readme-images/screenshot-mobile-dark.JPG" alt="Mobile Screenshot">
 </details>
 
 <details><summary>Screenshot (Light Mode) - Mobile</summary>
-    <img src="./documents/readme-images/screenshot-mobile-light.jpg" alt="Mobile Screenshot">
+    <img src="./documents/readme-images/screenshot-mobile-light.JPG" alt="Mobile Screenshot">
 </details>
 
 [Back to top ⇧](#table-of-contents)
