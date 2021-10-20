@@ -91,7 +91,15 @@ The Johns Hopkins Coronavirus Resource Center (CRC) is a continually updated sou
 ```
 Example Request
 
-curl --location --request GET 'https://api.covid19api.com/'
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+
+fetch("https://api.covid19api.com/", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
 
 Example Response
 
@@ -125,7 +133,15 @@ Example Response
 ```
 Example Request
 
-curl --location --request GET 'https://api.covid19api.com/summary/
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+
+fetch("https://api.covid19api.com/summary", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
 
 Example Response
 
