@@ -3,10 +3,12 @@ let box = document.getElementsByClassName("box-container");
 
 function themeMode(backgroundColor, backgroundColorBoxes, fontColor, boxShadow) {
 
-    /* This function receives as parameters: backgroundColor, 
-       backgroundColorBoxes, fontColor and boxShadow. Afterwards, 
-       it is called by the changeBackgroundColor() function and 
-       passed the corresponding values. */
+    /**
+     * This function receives as parameters: backgroundColor, 
+     * backgroundColorBoxes, fontColor and boxShadow. Afterwards, 
+     * it is called by the changeBackgroundColor() function and 
+     * passed the corresponding values.
+     */
 
     body.style.backgroundColor = backgroundColor;
 
@@ -114,17 +116,24 @@ function loadCountriesList() {
 
 function decimalPoint(number) {
 
-    /* This function adds a decimal point after every
-       three digits in the number given as argument. */
+    /**
+     * This function adds a decimal point after every
+     * three digits in the number given as argument.
+     * E.g., 
+     * without function -> Total Confirmed: 241215431
+     * with function -> Total Confirmed: 241.215.431
+     */
 
     return number.toLocaleString('pt-Br');
 }
 
 function addZeroDigitToHour(number) {
 
-    /* This functions adds the zero digit to the hour/minute 
-        if hour/minute is less than 10. E.g., time: 13:05 
-    */
+    /**
+     * This functions adds the zero digit to the hour/minute 
+     * if hour/minute is less than 10. 
+     * E.g., time: 13:05
+     */
 
     if (number < 10) {
         return '0' + number;
