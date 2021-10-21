@@ -306,15 +306,15 @@ As a site owner, I would like to provide users with the latest data about COVID-
          <img src="./documents/wireframes/wireframe-414px.png">
        </details>
 
-	**Navigation:** Select field
-
-	* Click on the select field and scroll down to see the list of all available countries.
-	* Gets the latest data about the COVID-19 disease outbreak with a only one single click.
-
 	**Navigation:** Lightbulb icon
 
 	* Users can choose which background color they wish to display: light or dark.
 	* This feature is available on all devices, including tablets and mobile phones.
+  
+	**Main Content:** Select field
+
+	* Click on the select field and scroll down to see the list of all available countries.
+	* Gets the latest data about the COVID-19 disease outbreak with a only one single click.
 
 	**Features**
 
