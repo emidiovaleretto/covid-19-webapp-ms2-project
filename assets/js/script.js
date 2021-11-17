@@ -80,23 +80,20 @@ function addData(data) {
 
     /* This function add data to the HTML document. */
 
-    lastUpdate.innerHTML = formatDate(data.Date);
-    newConfirmed.innerHTML = decimalPoint(data.NewConfirmed);
-    totalConfirmed.innerHTML = decimalPoint(data.TotalConfirmed);
-    dailyDeaths.innerHTML = decimalPoint(data.NewDeaths);
-    totalDeaths.innerHTML = decimalPoint(data.TotalDeaths);
-    newRecovered.innerHTML = decimalPoint(data.NewRecovered);
-    totalRecovered.innerHTML = decimalPoint(data.TotalRecovered);
+    Object.entries(data).forEach(([key, value]) => {
 
+        if (data[key] == 0) {
+            $(`#${key}`).html('No data');
+        }
+        else {
+            $(`#${key}`).html(decimalPoint(value));
+
+            if (key == 'Date')
+                $('#Date').html(formatDate(data[key]));
+        }
+    });
 }
 
-let lastUpdate = document.getElementById('last-updated');
-let newConfirmed = document.getElementById("new-confirmed");
-let totalConfirmed = document.getElementById("total-confirmed");
-let dailyDeaths = document.getElementById("daily-deaths");
-let totalDeaths = document.getElementById("total-deaths");
-let newRecovered = document.getElementById('daily-recovered');
-let totalRecovered = document.getElementById('total-recovered');
 let countryFlag = document.getElementById('flag');
 
 
